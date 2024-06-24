@@ -1,0 +1,322 @@
+.principal{
+	position: relative;
+	background: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(20px);
+	width: 80vw;
+	height: 70vh;
+	border-radius: 1vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 6vh 0vh 6vh 0vh;
+}
+.principal img{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 1vw;
+	box-shadow: 1vh 1vh 2vh black;
+}
+.principal .opacidad{
+	position: absolute;
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	height: 100%;
+	border-radius: 1vw;
+}
+/* ||||||||||||||||||||||||||||||||||||||||||| B L O Q U E   I Z Q U I E R D O |||||||||||||||||||||||||||||||||||||||||||| */
+.principal .bloqueIzquierdo{
+	position: relative;
+	width: 45%;
+	height: 80%;
+}
+.principal .bloqueIzquierdo .contenidoInformativo{  }
+.principal .bloqueIzquierdo .contenidoInformativo .mision{
+	font-size: 7.5vh;
+	color: #f1683a;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+	margin: 2vh 0vh 0vh 0vh;
+}
+.principal .bloqueIzquierdo .contenidoInformativo .pasajeBiblico{
+	display: block;
+	font-size: 3.5vh;
+	color: #fff;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+	margin: 2vh 0vh 0vh 0vh;
+	font-family: "Allura", cursiva;
+}
+.principal .bloqueIzquierdo .contenidoInformativo .capitulo{
+	font-size: 2.5vh;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	padding: 3vh;
+	margin: 1vh 0vh 0vh 0vh;
+	border-radius: 1vw;
+	text-align: justify;
+	width: 80%;
+	overflow: hidden;
+}
+.principal .bloqueIzquierdo .contenidoInformativo .trabajad{
+	font-size: 3.2vh;
+	margin: 4vh 0vh 0vh 0vh;
+	color: #ffc400;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+}
+.principal .bloqueIzquierdo .contenidoInformativo .contactanos{
+	font-size: 6vh;
+	margin: 2.5vh 0vh 0vh 0vh;
+	color: #fff;
+}
+.principal .bloqueIzquierdo .contenidoContactos{
+	margin: 1.5vh 0vh 0vh 0vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+}
+.principal .bloqueIzquierdo .contenidoContactos .iconoContacto{
+	border-radius: 50vw;
+}
+.principal .bloqueIzquierdo .contenidoContactos a ion-icon{
+	font-size: 5vh;
+	color: #bababa;
+	transition: .7s;
+}
+.principal .bloqueIzquierdo .contenidoContactos a ion-icon:hover{
+	color: #fff;
+}
+/* ||||||||||||||||||||||||||||||||||||||||||| B L O Q U E   D E R E C H O |||||||||||||||||||||||||||||||||||||||||||| */
+.principal .bloqueDerecho{
+	position:  relative;
+	width: 45%;
+	height: 80%;
+}
+.principal .bloqueDerecho .iepCLS{
+	width: 60%;
+	height: 20%;
+	background-color: #eee;
+	color: #f1683a;
+	border-top: 0.6vw solid #ffc400;
+	border-left: 0.6vw solid #ffc400;
+	border-right: 0.6vw solid #ffc400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4vh 0vh 0vh 0vh;
+}
+.principal .bloqueDerecho .iepCLS .ieph6{
+	font-size: 10vh;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+}
+.principal .bloqueDerecho .mayoCLS{
+	width: 60%;
+	height: 20%;
+	background-color: #f1683a;
+	color: #eee;
+	border-bottom: 0.6vw solid #ffc400;
+	border-left: 0.6vw solid #ffc400;
+	border-right: 0.6vw solid #ffc400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.principal .bloqueDerecho .mayoCLS .mayo{
+	font-size: 5vh;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+}
+.principal .bloqueDerecho .uneteCLS{
+	width: 65%;
+	height: 15%;
+	margin: 4vh 0vh 0vh 0vh;
+	display: flex;
+	justify-content: center;
+}
+.principal .bloqueDerecho .uneteCLS button{
+	font-size: 2.5vh;
+	letter-spacing: 0.11vw;
+	width: 100%;
+	background-color: transparent;
+	border: 0.4vh solid #eee;
+	border-radius: 0.4vw;
+	color: #fff;
+	transition: .7s;
+	cursor: pointer;
+}
+.principal .bloqueDerecho .uneteCLS button:hover{
+	background-color: #eee;
+	color: #555;
+}
+.principal .bloqueDerecho .trabajosEspirituales{
+	margin: 4vh 0vh 0vh 0vh;
+	font-size: 5.5vh;
+	text-shadow: 0.3vh 0.3vh 0.1vh black;
+	color: #fff;
+}
+
+/* _______________________  S C R E E N   F L A S H  ________________________  I N I C I O  */
+.popup-screen{
+	top: 0;
+	z-index: 999999;
+	position: fixed;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	transition: .5s ease;
+	transition-property: visibility;
+}
+.popup-screen.active{
+	visibility: visible;
+}
+.popup-box{
+	position: relative;
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+/*	max-width: 350px;*/
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+/*	margin: 20px;*/
+	padding: 4vh 4vw;
+	border-radius: 1.5vw;
+	box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+	transform: scale(0);
+	transition: .5s ease;
+	transition-property: transform;
+}
+.popup-screen.active .popup-box{
+	transform: scale(1);
+}
+.popup-box h2{
+	font-size: 4vh;
+	font-weight: 800;
+	margin-bottom: 2vh;
+}
+.close-btn{
+	position: absolute;
+	font-size: 4vh;
+	top: 0;
+	right: 0;
+	margin: 5%;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: .3s ease;
+	transition-property: opacity;
+}
+.close-btn:hover{
+	opacity: 1;
+}
+.popup-screen .popup-box form{
+	/*border: 5px solid darkred;
+	background-color: red;*/
+}
+.popup-screen .popup-box form .txtNombre{
+	/*border: 5px solid darkblue;
+	background-color: blue;*/
+	width: 100%;
+	font-size: 2.5vh;
+	margin: 0vh 0vh 1.5vh 0vh;
+	padding: 2%;
+}
+.popup-screen .popup-box form textarea{
+	/*border: 5px solid darkgreen;
+	background-color: green;*/
+	font-size: 2.5vh;
+	margin: 0vh 0vh 1.5vh 0vh;
+	padding: 2%;
+	width: 100%;
+}
+.popup-screen .popup-box form .envio{
+	/*border: 5px solid darkslategray;*/
+	padding: 5% 10%;
+	font-size: 2.3vh;
+	letter-spacing: 0.1vw;
+	border: none;
+	background: #1683a0;
+	color: #fff;
+	transition: .7s;
+}
+.popup-screen .popup-box form .envio:hover{
+	background-color: #dadada;
+	color: #555;
+}
+.popup-screen .popup-box form .borrado{
+	/*border: 5px solid darkgoldenrod;*/
+	padding: 5% 10%;
+	font-size: 2.3vh;
+	letter-spacing: 0.1vw;
+	border: none;
+	transition: .7s;
+	background: #f1683a;
+	color: #fff;
+}
+.popup-screen .popup-box form .borrado:hover{
+	background-color: red;
+	color: #eee;
+}
+/* _______________________  S C R E E N   F L A S H  ________________________  F I N A L  */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| R E S P O N S I V E   C E L U L A R |||||||||||||||||||||||||||||||||||||||||||||| */
+@media(max-width: 991px){
+	.principal{
+		width: 95vw;
+		height: 105vh;
+		display: block;
+		margin: 4.5vh 0vh 4vh 0vh;
+	}
+	.principal img{
+		object-fit: cover;
+	}
+	/* ||||||||||||||||||||||||||||||||||||||||||| B L O Q U E   I Z Q U I E R D O |||||||||||||||||||||||||||||||||||||||||||| */
+	.principal .bloqueIzquierdo{
+		width: 90%;
+		height: 55%;
+	}
+	.principal .bloqueIzquierdo .contenidoInformativo .mision{
+		font-size: 5em;
+		text-shadow: 0.2vh 0.2vh 0.1vh black;
+		display: block;
+		padding-top: 0.6em;
+	}
+	.principal .bloqueIzquierdo .contenidoInformativo .capitulo{
+		text-shadow: 0.2vh 0.2vh 0.1vh black;
+	}
+	.principal .bloqueIzquierdo .contenidoInformativo .trabajad{
+		font-size: 3em;
+	}
+	.principal .bloqueIzquierdo .contenidoInformativo .contactanos{
+		font-size: 5em;
+	}
+	/* ||||||||||||||||||||||||||||||||||||||||||| B L O Q U E   D E R E C H O |||||||||||||||||||||||||||||||||||||||||||| */
+	.principal .bloqueDerecho{
+		padding-top: 2.5em;
+		width: 90%;
+		height: 40%;
+	}
+	.principal .bloqueDerecho .iepCLS{
+		width: 80%;
+		border-top: 2vw solid #ffc400;
+		border-left: 2vw solid #ffc400;
+		border-right: 2vw solid #ffc400;
+	}
+	.principal .bloqueDerecho .iepCLS .ieph6{
+		font-size: 9em;
+	}
+	.principal .bloqueDerecho .mayoCLS{
+		width: 80%;
+		border-bottom: 2vw solid #ffc400;
+		border-left: 2vw solid #ffc400;
+		border-right: 2vw solid #ffc400;
+	}
+	.principal .bloqueDerecho .trabajosEspirituales{
+		font-size: 3.7em;
+	}
+}

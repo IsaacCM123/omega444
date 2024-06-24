@@ -1,0 +1,606 @@
+body{
+	background-image: url('../imagenes/Eventos/fondo/fondoEventos.jpg');
+	background-size: cover;
+	background-position: center;
+}
+*{
+	font-family: "Allura", cursiva;
+	margin: 0;
+	text-decoration: none;
+}
+/* B O T O N   V O L B E R   A   I N I C I O */
+.volberBTN{
+	width: 55vw;
+	height: 10vh;
+	margin-top: 7vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.volberBTN a{
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 1vh 1vh 1.5vh rgba(0, 0, 0, 0.6);
+	border: 1px solid #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.2vw;
+	font-size: 4vh;
+	color: #ffc400;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	transition: 0.7s;
+}
+.volberBTN a:hover{
+		background-color: rgba(0, 0, 0, 0.2);
+		box-shadow: 2vh 2vh 2.5vh rgba(0, 0, 0, 0.7);
+		text-shadow: 0.5vh 0.5vh 0.6vh black;
+}
+/* ||||||||||||||||||||||||||| P R I M E R   B L O Q U E   Q U E   C O N T I E N E   I N V I T A C I O N   -   V I D E O  ||||||||||||||||||||||||||| */
+.primeroEventos{
+	margin-top: 7vh;
+	width: 90vw;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+/* V I D E O   D E   P L A Y E R   E L E M E N T   I N V I T A C I O N */
+.primeroEventos .bloquePrincipalEventos{
+	width: 95%;
+	height: 76%;
+	display: flex;
+	justify-content: space-around;
+}
+.primeroEventos .bloquePrincipalEventos .bloquePastorVideo{
+	width: 40vw;
+	height: 53vh;
+	border-radius: 0.3vw;
+	overflow: hidden;
+	box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.7);
+}
+.primeroEventos .bloquePrincipalEventos .bloqueInvitacion{
+	width: 45%;
+	height: 83%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.7);
+	border-radius: 0.3vw;
+	color: #ffc400;
+	padding: 2vw;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	border: 1px solid #fff;
+}
+.primeroEventos .bloquePrincipalEventos .bloqueInvitacion h1{
+	font-size: 4.5vh;
+	display: flex;
+	line-height: 1;
+
+}
+/* B L O Q U E   T E X T O   A N I M A D O   -   P L U M A   E S C R I B I E N D O  */
+.primeroEventos .bloqueSecundarioEventos{
+	position: relative;
+	width: 95%;
+	height: 10%;
+	display: flex;
+	align-items: end;
+	justify-content: end;
+	
+}
+.primeroEventos .bloqueSecundarioEventos h5{
+	font-size: 5vh;
+	display: inline-block;
+	font-weight: 700;
+}
+.primeroEventos .bloqueSecundarioEventos .pluma img{
+	position: relative;
+	z-index: 100;
+	width: 10vw;
+	height: 50vh;
+}
+
+
+/* |||||||||||||||||||||||||||||||||| S E G U N D O   B L O Q U E   P A S A J E   B I B L I C O   Y   E S C R I B E N O S |||||||||||||||||||||||||||||||||| */
+.segundoEventos{
+	margin-top: 7vh;
+	width: 90vw;
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.segundoEventos .pasajeEventos{
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.7);
+	border: 1px solid #fff;
+	width: 50%;
+	height: 90%;
+	border-radius: 0.5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	color: #ffc400;
+}
+.segundoEventos .pasajeEventos h4{
+	font-size: 8vh;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+}
+.segundoEventos .pasajeEventos p{
+	font-size: 4vh;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	font-weight: bold;
+	margin-top: 3vh;
+	margin-bottom: 1vh;
+}
+.segundoEventos .pasajeEventos h6{
+	font-size: 5vh;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	margin: 0vh 6vh 0vh 6vh;
+	text-align: justify;
+}
+/* F O R M U L A R I O */
+.segundoEventos .escribenos{
+	width: 40%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.7);
+	border: 1px solid #fff;
+	border-radius: 0.5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	color: #ffc400;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+}
+.segundoEventos .escribenos h2{
+	font-size: 5vh;
+}
+.segundoEventos .escribenos form{
+	background-color: #eee4;
+	width: 80%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	border-radius: 0.5vw;
+}
+.segundoEventos .escribenos form .txtNombre{
+	font-size: 3vh;
+	margin-top: 2vh;
+	font-weight: bold;
+}
+.segundoEventos .escribenos form .txtComentario{
+	font-size: 3vh;
+	font-weight: bold;
+}
+.segundoEventos .escribenos form .auxiliar{
+	gap: 1vw;
+	margin-bottom: 2vh;
+	width: 75%;
+	height: 27%;
+	display: flex;
+	justify-content: center;
+}
+.segundoEventos .escribenos form input{
+	font-size: 3.3vh;
+	width: 45%;
+	font-weight: bold;
+}
+.segundoEventos .escribenos form .envio{
+	background-color: transparent;
+	border: 0.5vh solid #ffc400;
+	color: #ffc400;
+	border-radius: 0.5vw;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	box-shadow: 0.6vh 0.6vh 0.5vh rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: .7s;
+}
+.segundoEventos .escribenos form .envio:hover{
+	box-shadow: 1.5vh 1.5vh 1.5vh rgba(0, 0, 0, 0.7);
+}
+.segundoEventos .escribenos form .borrado{
+	background-color: #f1683a;
+	border: 0.5vh solid #f1683a;
+	color: #fff;
+	border-radius: 0.5vw;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	box-shadow: 0.6vh 0.6vh 0.5vh rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: .7s;
+}
+.segundoEventos .escribenos form .borrado:hover{
+	box-shadow: 1.5vh 1.5vh 1.5vh rgba(0, 0, 0, 0.7);
+}
+/* |||||||||||||||||||||||||||||||||| T E R C E R   B L O Q U E   P A S A J E   B I B L I C O   Y   E S C R I B E N O S |||||||||||||||||||||||||||||||||| */
+.terceroEventos{
+	margin-top: 3vh;
+	margin-bottom: 5vh;
+	width: 90vw;
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.terceroEventos .contactosEventos{
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 1.5vh 1.5vh 2vh rgba(0, 0, 0, 0.5);
+	border: 1px solid #fff;
+	border-radius: 1vw;
+	width: 40%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.terceroEventos .contactosEventos h1{
+	color: #f5bd00;
+	text-shadow: 0.3vh 0.3vh 0.3vh black;
+	margin: 0vh 11vh 3vh 11vh;
+	text-align: justify;
+}
+.terceroEventos .contactosEventos ion-icon{
+	font-size: 7vh;
+	color: #fff;
+	margin-left: 1vw;
+	transition: .7s;
+}
+.terceroEventos .contactosEventos ion-icon:hover{
+	color: #f5bd00;
+}
+.terceroEventos .fotosInvitacion{
+	width: 40%;
+	height: 90%;
+}
+
+/* S E G U N D A   S E C C I O N - P o r t a   I m a g e n e s   e n   c a n t i c o s YA ESTA DEFINIDO ANTERIORMENTE RESPONSIVE IGUAL*/
+.slider{
+	position: relative;
+	width: 30vw;
+	height: 50vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2vh;
+	box-shadow: 0.7vh 0.7vh 2vh black;
+}
+.list{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	left: 0; /* Para que la primera imagen se deslize lentamente */
+	width: max-content;
+	transition: 1s;
+}
+.slider .list .item{
+	width: 100%;
+}
+.list img{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.buttons{
+	position: absolute;
+	top: 43%;
+	left: 1.7%;
+	width: 97%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+.buttons button{
+	background-color: #eee8;
+	color: #fff;
+	width: 12%;
+	border-radius: 50%;
+	border: none;
+	font-family: monospace;
+	font-size: 4vh;
+	transition: .7s;
+}
+.buttons button:hover{
+	background-color: #eee;
+	color: #555;
+	box-shadow: 4px 4px 3px #555;
+}
+.dots{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	bottom: 7%;
+	width: 70%;
+	justify-content: center;
+	margin: 0% 0% 0% 0%;
+}
+.dots li{
+	background-color: #eee8;
+	border: 0.3vh solid #eee8;
+	list-style: none;
+	width: 2%;
+	height: 1vh;
+	margin: 0% 3% 0% 3%;
+	border-radius: 50px;
+	transition: 1s;
+}
+.dots li.active{
+	width: 12%;
+}
+.slider #contactanos1{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	margin: 2%;
+	font-size: 3.5vh;
+	background-color: #eee8;
+	color: #fff;
+	padding: 2%;
+	border-radius: 0.5vw;
+	transition: .7s;
+}
+.slider #contactanos1:hover{
+	background-color: #eee;
+	color: #555;
+	box-shadow: 4px 4px 3px #555;
+}
+/* _______________________  S C R E E N   F L A S H  ______  YA ESTA DEFINIDO ANTERIORMENTE RESPONSIVE IGUAL  */
+.popup-screen{
+	top: 0;
+	z-index: 99999;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .9);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	transition: .3s;
+}
+.popup-screen.active{
+	visibility: visible;
+}
+.popup-box{
+	position: relative;
+/*	top: 3vh;*/
+	display: flex;
+}
+.popup-screen.active .popup-box{  }
+/* P O R T A - I M A G E N E S   D E N T R O   D E L   S C R E E N   F L A S H YA ESTA DEFINIDO ANTERIORMENTE RESPONSIVE IGUAL */
+.popup-screen .popup-box .slider1{
+	position: relative;
+	width: 67vw;
+	height: 95vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup-screen .popup-box .slider1 .list1{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	left: 0; /* Para que la primera imagen se deslize lentamente */
+	width: max-content;
+	transition: 1s;
+}
+.popup-screen .popup-box .slider1 .list1 .item1{
+	width: 100%;
+}
+.popup-screen .popup-box .slider1 .list1 img{
+	width: 100%;
+	height: 100%;
+}
+.popup-screen .popup-box .slider1 .buttons1{
+	position: absolute;
+	top: 47%;
+	left: 1.7%;
+	width: 97%;
+	height: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.popup-screen .popup-box .slider1 .buttons1 button{
+	background-color: #eee9;
+	color: #fff;
+	width: 8%;
+	border-radius: 50%;
+	border: none;
+	font-family: monospace;
+	font-size: 4vh;
+	transition: .7s;
+}
+.popup-screen .popup-box .slider1 .buttons1 button:hover{
+	background-color: #eee;
+	color: #555;
+	box-shadow: 1vh 1vh 1.8vh black;
+}
+.popup-screen .popup-box .close-btn1{
+	position: absolute;
+	color: #eee9;
+	font-size: 8vh;
+	top: 0;
+	right: 0;
+	margin-right: -10%;
+	cursor: pointer;
+	transition: .7s;
+}
+.popup-screen .popup-box .close-btn1:hover{
+	color: #fff;
+}
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	/* B O T O N   V O L B E R   A   I N I C I O */
+	.volberBTN{
+		width: 80vw;
+		height: 8vh;
+	}
+	.volberBTN a{ font-size: 1em; }
+/* ||||||||||||||||||||||||||| P R I M E R   B L O Q U E   Q U E   C O N T I E N E   I N V I T A C I O N   -   V I D E O  ||||||||||||||||||||||||||| */
+.primeroEventos{
+	display: block;
+	width: 97vw;
+	height: 93vh;
+}
+/* V I D E O   D E   P L A Y E R   E L E M E N T   I N V I T A C I O N */
+.primeroEventos .bloquePrincipalEventos{
+	display: block;
+	width: 99%;
+	height: 90%;
+}
+.primeroEventos .bloquePrincipalEventos .bloquePastorVideo{
+	width: 99%;
+	height: 47%;
+}
+.primeroEventos .bloquePrincipalEventos .bloqueInvitacion{
+	width: 90%;
+	height: 40%;
+	margin-top: 1em;
+	padding: 0.7em;
+}
+.primeroEventos .bloquePrincipalEventos .bloqueInvitacion h1{
+	font-size: 1em;
+	text-align: left;
+}
+/* B L O Q U E   T E X T O   A N I M A D O   -   P L U M A   E S C R I B I E N D O  */
+.primeroEventos .bloqueSecundarioEventos{
+	width: 99%;
+	height: 6%;
+}
+.primeroEventos .bloqueSecundarioEventos h5{
+	font-size: 0.8em;
+}
+.primeroEventos .bloqueSecundarioEventos .pluma img{
+	width: 14vw;
+	height: 22vh;
+}
+
+/* |||||||||||||||||||||||||||||||||| S E G U N D O   B L O Q U E   P A S A J E   B I B L I C O   Y   E S C R I B E N O S |||||||||||||||||||||||||||||||||| */
+.segundoEventos{
+	display: block;
+	width: 97vw;
+	height: 95vh;
+	margin-top: 0;
+}
+.segundoEventos .pasajeEventos{
+	width: 95%;
+	height: 45%;
+}
+.segundoEventos .pasajeEventos h4{
+	font-size: 1.5em;
+}
+.segundoEventos .pasajeEventos p{
+	font-size: 1.2em;
+}
+.segundoEventos .pasajeEventos h6{
+	font-size: 1.15em;
+}
+/* F O R M U L A R I O */
+.segundoEventos .escribenos{
+	width: 99%;
+	height: 50%;
+	margin-top: 1em;
+}
+.segundoEventos .escribenos h2{
+	font-size: 1.4em;
+}
+.segundoEventos .escribenos form{
+	width: 93%;
+	height: 60%;
+}
+.segundoEventos .escribenos form .auxiliar{
+	gap: 0.7em;
+}
+.segundoEventos .escribenos form .txtNombre{
+	/*font-size: 3vh;
+	margin-top: 2vh;
+	font-weight: bold;*/
+}
+.segundoEventos .escribenos form .txtComentario{}
+
+.segundoEventos .escribenos form input{}
+.segundoEventos .escribenos form .envio{}
+.segundoEventos .escribenos form .envio:hover{}
+.segundoEventos .escribenos form .borrado{}
+.segundoEventos .escribenos form .borrado:hover{}
+
+/* |||||||||||||||||||||||||||||||||| T E R C E R   B L O Q U E   P A S A J E   B I B L I C O   Y   E S C R I B E N O S |||||||||||||||||||||||||||||||||| */
+.terceroEventos{
+	width: 97vw;
+	height: 70vh;
+	display: block;
+	margin-bottom: 0;
+}
+.terceroEventos .contactosEventos{
+	width: 99%;
+	height: 40%;
+}
+.terceroEventos .contactosEventos h1{
+	font-size: 1.3em;
+	text-align: left;
+}
+.terceroEventos .contactosEventos ion-icon{
+	font-size: 1.5em;
+}
+.terceroEventos .contactosEventos ion-icon:hover{
+}
+.terceroEventos .fotosInvitacion{
+	width: 99%;
+	height: 60%;
+}
+
+
+	/* S E G U N D A   S E C C I O N - P o r t a   I m a g e n e s   e n   c a n t i c o s */
+	.slider{
+		width: 100%;
+		height: 95%;
+		border-radius: 0;
+		box-shadow: 0.2em 0.2em 1.5em black;
+		margin-top: 1em;
+	}
+	.dots{
+		left: 0;
+	}
+	.dots li{
+		width: 1.8%;
+		height: 0.6vh;
+	}
+	/* P O R T A - I M A G E N E S   D E N T R O   D E L   S C R E E N   F L A S H */
+	.popup-screen .popup-box .slider1{
+		width: 100vw;
+		height: 40vh;
+	}
+	.popup-screen .popup-box .slider1 .buttons1{
+		/*background-color: darkviolet;*/
+		height: 18%;
+	}
+	.popup-screen .popup-box .slider1 .buttons1 button{
+		width: 14%;
+	}
+	.popup-screen .popup-box .close-btn1{
+		font-size: 7vh;
+		margin-right: 0%;
+		margin-top: -15%;
+		color: #fff;
+	}
+	.popup-screen .popup-box .close-btn1:hover{
+		color: #bababa;
+	}
+}

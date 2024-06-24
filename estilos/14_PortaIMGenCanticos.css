@@ -1,0 +1,377 @@
+/* S E C T O R   D E   C O R I S T A S */
+.global{
+	/*background-color: darkred;*/
+	width: 94vw;
+	height: 57vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 4vh;
+}
+/* P R I M E R A   S E C C I O N   -   I N V I T A C I O N */
+.global .invitacion{
+/*	background-color: darkblue;*/
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 1.5vw;
+	width: 58%;
+	padding-bottom: 1.5%;
+	box-shadow: 3px 3px 10px black;
+	overflow: hidden;
+}
+.global .invitacion h4{
+	/*background-color: gray;*/
+	font-size: 2.1vw;
+	color: #fff;
+	margin: 3vh 0vh 2vh 0vh;
+}
+.global .invitacion small{
+	/*background-color: darkviolet;*/
+	font-size: 3.3vh;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-family: "Allura", cursiva;
+}
+.global .invitacion p{
+	/*background-color: green;*/
+	font-size: 1.2vw;
+	text-align: justify;
+	padding: 3%;
+	margin: 1% 3% 1% 3%;
+	border-radius: 1.5vw;
+	text-shadow: 1px 1px 1px black;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+}
+.global .invitacion .unirte{
+/*	background-color: darkcyan;*/
+	display: flex;
+	flex-direction: column;
+}
+.global .invitacion .unirte div{
+/*	background-color: black;*/
+	display: flex;
+	align-items: center;
+}
+.global .invitacion .unirte img{
+/*	background-color: hotpink;*/
+	width: 1.7vw;
+	margin: 0.7% 1% 0% 4%;
+}
+.global .invitacion .unirte b{
+	/*background-color: yellow;*/
+	font-size: 1.1vw;
+	color: #fff;
+}
+
+/* S E G U N D A   S E C C I O N - P o r t a   I m a g e n e s   e n   c a n t i c o s */
+.slider{
+	position: relative;
+	width: 30vw;
+	height: 50vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2vh;
+	box-shadow: 0.7vh 0.7vh 2vh black;
+}
+.list{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	left: 0; /* Para que la primera imagen se deslize lentamente */
+	width: max-content;
+	transition: 1s;
+}
+.slider .list .item{
+	width: 100%;
+}
+.list img{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.buttons{
+	position: absolute;
+	top: 43%;
+	left: 1.7%;
+	width: 97%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+}
+.buttons button{
+	background-color: #eee8;
+	color: #fff;
+	width: 12%;
+	border-radius: 50%;
+	border: none;
+	font-family: monospace;
+	font-size: 4vh;
+	transition: .7s;
+}
+.buttons button:hover{
+	background-color: #eee;
+	color: #555;
+	box-shadow: 4px 4px 3px #555;
+}
+.dots{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	bottom: 7%;
+	width: 70%;
+	justify-content: center;
+	margin: 0% 0% 0% 0%;
+}
+.dots li{
+	background-color: #eee8;
+	border: 0.3vh solid #eee8;
+	list-style: none;
+	width: 2%;
+	height: 1vh;
+	margin: 0% 3% 0% 3%;
+	border-radius: 50px;
+	transition: 1s;
+}
+.dots li.active{
+	width: 12%;
+}
+.slider #contactanos1{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	margin: 2%;
+	font-size: 3.5vh;
+	background-color: #eee8;
+	color: #fff;
+	padding: 2%;
+	border-radius: 0.5vw;
+	transition: .7s;
+}
+.slider #contactanos1:hover{
+	background-color: #eee;
+	color: #555;
+	box-shadow: 4px 4px 3px #555;
+}
+
+/* _______________________  S C R E E N   F L A S H  ________________________  */
+.popup-screen{
+	top: 0;
+	z-index: 99999;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .9);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	transition: .3s;
+}
+.popup-screen.active{
+	visibility: visible;
+}
+.popup-box{
+	position: relative;
+/*	top: 3vh;*/
+	display: flex;
+}
+.popup-screen.active .popup-box{  }
+/* P O R T A - I M A G E N E S   D E N T R O   D E L   S C R E E N   F L A S H */
+.popup-screen .popup-box .slider1{
+	position: relative;
+	width: 67vw;
+	height: 95vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup-screen .popup-box .slider1 .list1{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	left: 0; /* Para que la primera imagen se deslize lentamente */
+	width: max-content;
+	transition: 1s;
+}
+.popup-screen .popup-box .slider1 .list1 .item1{
+	width: 100%;
+}
+.popup-screen .popup-box .slider1 .list1 img{
+	width: 100%;
+	height: 100%;
+}
+.popup-screen .popup-box .slider1 .buttons1{
+	position: absolute;
+	top: 47%;
+	left: 1.7%;
+	width: 97%;
+	height: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.popup-screen .popup-box .slider1 .buttons1 button{
+	background-color: #eee9;
+	color: #fff;
+	width: 8%;
+	border-radius: 50%;
+	border: none;
+	font-family: monospace;
+	font-size: 4vh;
+	transition: .7s;
+}
+.popup-screen .popup-box .slider1 .buttons1 button:hover{
+	background-color: #eee;
+	color: #555;
+	box-shadow: 1vh 1vh 1.8vh black;
+}
+.popup-screen .popup-box .close-btn1{
+	position: absolute;
+	color: #eee9;
+	font-size: 8vh;
+	top: 0;
+	right: 0;
+	margin-right: -10%;
+	cursor: pointer;
+	transition: .7s;
+}
+.popup-screen .popup-box .close-btn1:hover{
+	color: #fff;
+}
+
+/* T E R C E R A   S E C C I O N   -   I C O N O S */
+.global .contactosCoristas{
+/*	background-color: darkviolet;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 4%;
+}
+.global .contactosCoristas a ion-icon{
+/*	background-color: green;*/
+	font-size: 3.2vw;
+	color: #fff;
+	margin: 10% 0% 10% 0%;
+	transition: .7s;
+}
+.global .contactosCoristas a{
+	text-decoration: none;
+}
+.global .contactosCoristas a ion-icon:hover{
+	color: #bababa;
+}
+.global .contactosCoristas-Celular{
+	display: none;
+}
+
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	/* ____________________________________ P R I M E R A   S E C C I O N ____________________________________ */
+	.global{
+	flex-direction: column;
+	width: 90vw;
+	height: 100vh;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	}
+	.global .invitacion{
+		background-color: rgba(0, 0, 0, 0.4);
+		border-radius: 1em;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.global .invitacion h4{
+	/*background-color: gray;*/
+	font-size: 3.5em;
+	margin: 2.5vh 0vh 1vh 0vh;
+	}
+	.global .invitacion small{
+		/*background-color: darkviolet;*/
+		font-size: 3.3em;
+	}
+	.global .invitacion p{
+		font-size: 2.3em;
+		margin: 0% 0% 0% 0%;
+		border-radius: 0;
+		background: rgba(0, 0, 0, 0);
+		backdrop-filter: none;
+	}
+
+	.global .invitacion .unirte{	}
+	.global .invitacion .unirte div{	}
+	.global .invitacion .unirte img{
+		width: 3.5em;
+		margin: 1% 1% 1% 2%;
+	}
+	.global .invitacion .unirte b{
+		font-size: 1.6em;
+	}
+
+	/* S E G U N D A   S E C C I O N - P o r t a   I m a g e n e s   e n   c a n t i c o s */
+	.slider{
+		width: 100%;
+		height: 42%;
+		border-radius: 1em;
+		box-shadow: 0.2em 0.2em 1.5em black;
+		margin-top: 2em;
+	}
+	.dots li{
+		width: 1.8%;
+		height: 0.6vh;
+	}
+
+	/* T E R C E R A   S E C C I O N   -   I C O N O S */
+	.global .contactosCoristas{
+		display: none;
+	}
+	.global .contactosCoristas-Celular{
+		display: flex;
+		width: 85%;
+		height: 8%;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.buttons button{
+		width: 14%;
+	}
+	.global .contactosCoristas-Celular ion-icon{
+		/*background-color: darkolivegreen;*/
+		font-size: 6em;
+		color: #fff;
+		transition: .7s;
+	}
+	.global .contactosCoristas-Celular ion-icon:hover{
+		color: #bababa;
+	}
+
+	/* P O R T A - I M A G E N E S   D E N T R O   D E L   S C R E E N   F L A S H */
+	.popup-screen .popup-box .slider1{
+		width: 100vw;
+		height: 40vh;
+	}
+	.popup-screen .popup-box .slider1 .buttons1{
+		/*background-color: darkviolet;*/
+		height: 18%;
+	}
+	.popup-screen .popup-box .slider1 .buttons1 button{
+		width: 14%;
+	}
+	.popup-screen .popup-box .close-btn1{
+		font-size: 7vh;
+		margin-right: 0%;
+		margin-top: -15%;
+		color: #fff;
+	}
+	.popup-screen .popup-box .close-btn1:hover{
+		color: #bababa;
+	}
+}

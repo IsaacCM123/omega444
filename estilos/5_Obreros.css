@@ -1,0 +1,522 @@
+/* Obreros */
+.carousel{
+	/*border: 5px solid red;*/
+/*	background: pink;*/
+	width: 98.7vw;
+	height: 95vh;
+	overflow: hidden; /* Para que todos los elementos hijos queden dentro de este [ DIV carousel ] y no haya desbordamiento */
+	position: relative;	/* Para que todos los elementos se acomoden  dentro del padre DIV */
+	overflow: hidden;
+}
+.carousel .list{
+	/*border: 5px solid blue;*/
+	/*background: skyblue;*/
+	width: 100%;
+}
+.carousel .list .item{
+	/*border: 5px solid green;*/
+	/*background: greenyellow;*/
+	width: 100%;
+	position: absolute;	/* Ejm: Las cartas estan uno debajo del otro, lo que hace es ponerlo uno SOBRE otro */
+	inset: 0 0 0 0;		/* Estudiar !!!! ...Para que se acole al DIV padre */
+}
+.carousel .list .item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Estudiar !!! ...Para que la resolucion se mantenga original */
+}
+.carousel .list .item .content{
+	/*border: 5px solid red;
+	background: pink;*/
+	width: 50%;
+	height: 70%;
+	position: absolute;
+	top: 14%;
+	left: 9%;
+	color: #fff;
+}
+.carousel .list .item .content .author{	/* EN LA VINA DEL SENOR */
+	/*border: 5px solid blue;
+	background: skyblue;*/
+	font-weight: bold;
+	font-size: 3vh;
+	text-align: left;
+	text-shadow: 1px 1px 1px black;
+}
+.carousel .list .item .content .title, 	/* OBRA DE DIOS */
+.carousel .list .item .content .topic{	/* I.E.P. */
+	/*border: 5px solid purple;
+	background: plum;*/
+	font-weight: bold;
+	font-size: 9vh;
+	text-align: left;
+	line-height: 13vh;
+	text-shadow: 1px 1px 1px black;
+}
+.carousel .list .item .content .topic{ /* I.E.P. */
+	color: #f1683a;
+}
+.carousel .list .item .content .des{	/* POR QUE DE TAL MANERA AMO DIOS AL MUNDO. */
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 60%;
+	float: left;
+	font-size: 2.5vh;
+	text-align: left;
+	text-shadow: 1px 1px 1px black;
+}
+.carousel .list .item .content .des small{
+	font-family: "Allura", cursiva;
+	font-size: 3.3vh;
+	text-shadow: 2px 2px 2px black;
+	color: #fff;
+	display: block;
+	margin-top: 1.5vh;
+	margin-bottom: 2vh;
+	
+}
+.carousel .list .item .content .buttons{ /* VER MAS - CONOCENOS */
+	/*border: 5px solid blue;
+	background: skyblue;*/
+	display: flex;
+	height: 7vh;
+	width: 60%;
+	float: left;
+	gap: 0.5vw; /* Es la separacion entre los botones */
+	margin-top: 0.7vh;
+}
+.carousel .list .item .content button{
+	/*background-color: darkgreen;*/
+	border: none;
+	width: 40%;
+	letter-spacing: 0.1vw;
+	font-size: 2.2vh;
+	background: #555;
+	transition: .7s;
+}
+.carousel .list .item .content .buttons a{
+/*	background-color: darkred;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #eee;
+	cursor: default;
+	transition: .7s;
+}
+.carousel .list .item .content .buttons a:hover{
+	background-color: #eee;
+	color: #555;
+}
+.carousel .list .item .content button:nth-child(2){
+	background-color: transparent;
+	color: #eee;
+	border: 1px solid #eee;
+}
+.carousel .list .item .content button:hover{
+	background-color: #eee;
+	color: #555;
+}
+/* Thumbnail = Miniaturas */
+.thumbnail{
+	/*border: 5px solid purple;
+	background: plum;*/
+	position: absolute;
+	display: flex; 	/* Para que se ordenen en linea */
+	bottom: 11%;	/* Espacio entre el margen de abajo   */
+	left: 50%; 		/* Separacion entre el margen izquierdo y las figuritas */
+	z-index: 100; 	/* Para poner por delante las figuritas */
+	gap: 1%;		/* Separacion entre las figuritas */
+}
+.thumbnail .item{
+	/*border: 5px solid blue;
+	background: skyblue;*/
+	width: 10vw;
+	height: 30vh;
+/*	flex-shrink: 0;*/
+	position: relative;/* Para que el texto se distribuya a cada una de las figuritas */
+}
+.thumbnail .item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	/* Sin object-fit las figuritas se alargan feo */
+	border-radius: 1.5vw;
+}
+.thumbnail .item .content{
+	/*border: 5px solid green;
+	background: greenyellow;*/
+	position: absolute;	/* Para que se acople a las figuritas */
+/*	width: 100%;*/
+	font-size: 2vh;
+	bottom: 6%;
+	left: 12%;
+	/*right: 10px;*/
+}
+.thumbnail .item .content .title{
+	font-size: 2.6vh;
+	font-weight: bold;	/* Para darle negrita al [COCECHANDO] */
+}
+
+ /*arrows = Flechas */
+.arrows{
+	/*border: 5px solid black;
+	background-color: gray;*/
+	position: absolute;	/* Para que las flechas(<>) se vengan adelante y en posicion del elemento padre */
+	top: 76%;     /* tambien top: 80vh; */
+	left: 30%;
+	width: 9%;
+	height: 9%;
+	align-items: center;
+	display: flex;
+	gap: 1vw;
+	/*z-index: 1;*/
+}
+.arrows button{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #eee4;
+	border: none;
+	font-family: monospace;
+	color: #fff;
+	font-size: 4vh;
+	transition: .7s;
+	z-index: 1;
+}
+.arrows button:hover{
+	background-color: #eee;
+	color: #555;
+}
+.carousel .list .item:nth-child(1){
+	z-index: 1;
+}
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .des,
+.carousel .list .item:nth-child(1) .buttons{
+	transform: translateY(50px);
+	filter: blur(20px);
+	opacity: 0;
+	animation: showContent 0.5s linear 1 forwards;
+}
+@keyframes showContent{
+	to{
+		opacity: 1;
+		filter: blur(0);
+		transform: translateY(0);
+	}
+}
+.carousel .list .item:nth-child(1) .title{
+	animation-delay: 1.2s;
+}
+.carousel .list .item:nth-child(1) .topic{
+	animation-delay: 1.4s;
+}
+.carousel .list .item:nth-child(1) .des{
+	animation-delay: 1.6s;
+}.carousel .list .item:nth-child(1) .buttons{
+	animation-delay: 1.8s;
+}
+
+/* efecto siguiente click */
+.carousel.next .list .item:nth-child(1) img{
+	width: 150px;
+	height: 220px;
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	border-radius: 20px;
+	animation: showImage 0.5s linear 1 forwards;
+}
+@keyframes showImage{
+	to{
+		width: 100%;
+		height: 100%;
+		left: 0;
+		bottom: 0;
+		border-radius: 0;
+	}
+}
+.carousel.next .thumbnail .item:nth-last-child(1){
+	width: 0;
+	overflow: hidden;
+	animation: showThumbnail .5s linear 1 forwards;
+}
+@keyframes showThumbnail{
+	to{
+		width: 150px;
+	}
+}
+.carousel.next .thumbnail{
+	transform: translateX(150px);
+	animation: transformThumbnail .5s linear 1 forwards;
+}
+@keyframes transformThumbnail{
+	to{
+		transform: translateX(0);
+	}
+}
+
+/* efecto prev click */
+.carousel.prev .list .item:nth-child(2){
+	z-index: 2;
+}
+.carousel.prev .list .item:nth-child(2) img{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	animation: outImage 0.5s linear 1 forwards;
+}
+@keyframes outImage{
+	to{
+		width: 150px;
+		height: 220px;
+		border-radius: 20px;
+		left: 50%;
+		bottom: 50px;
+	}
+}
+.carousel.prev .thumbnail .item:nth-child(1){
+	width: 0;	
+	overflow: hidden;
+	opacity: 0;
+	animation: showThumbnail 0.5s linear 1 forwards;
+}
+.carousel.prev .list .item:nth-child(2) .author,
+.carousel.prev .list .item:nth-child(2) .title,
+.carousel.prev .list .item:nth-child(2) .topic,
+.carousel.prev .list .item:nth-child(2) .des,
+.carousel.prev .list .item:nth-child(2) .buttons{
+	animation: contentOut 1.5s linear 1 forwards;
+}
+@keyframes contentOut{
+	to{
+		transform: translateY(-150px);
+		filter: blur(20px);
+		opacity: 0;
+	}
+}
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+	pointer-events: none;
+}
+/* Time */
+.time{
+	width: 0%;
+	height: 10px;
+	background-color: #f1683a;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+.carousel.next .time,
+.carousel.prev .time{
+	width: 100%;
+	animation: timeRunning 2s linear 1 forwards;
+}
+@keyframes timeRunning{
+	to{
+		width: 0;
+	}
+}
+
+/* _______________________  S C R E E N   F L A S H  ________________________  I N I C I O  */
+.popup-screen{
+	top: 0;
+	z-index: 999999;
+	position: fixed;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	transition: .5s ease;
+	transition-property: visibility;
+}
+.popup-screen.active{
+	visibility: visible;
+}
+.popup-box{
+	position: relative;
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 4vh 4vw;
+	border-radius: 1.5vw;
+	box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+	transform: scale(0);
+	transition: .5s ease;
+	transition-property: transform;
+}
+.popup-screen.active .popup-box{
+	transform: scale(1);
+}
+.popup-box h2{
+	font-size: 4vh;
+	font-weight: 800;
+	margin-bottom: 2vh;
+}
+.close-btn{
+	position: absolute;
+	font-size: 4vh;
+	top: 0;
+	right: 0;
+	margin: 5%;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: .3s ease;
+	transition-property: opacity;
+}
+.close-btn:hover{
+	opacity: 1;
+}
+.popup-screen .popup-box form{
+	/*border: 5px solid darkred;
+	background-color: red;*/
+}
+.popup-screen .popup-box form .txtNombre{
+	/*border: 5px solid darkblue;
+	background-color: blue;*/
+	width: 100%;
+	font-size: 2.5vh;
+	margin: 0vh 0vh 1.5vh 0vh;
+	padding: 2%;
+}
+.popup-screen .popup-box form textarea{
+	/*border: 5px solid darkgreen;
+	background-color: green;*/
+	font-size: 2.5vh;
+	margin: 0vh 0vh 1.5vh 0vh;
+	padding: 2%;
+	width: 100%;
+}
+.popup-screen .popup-box form .envio{
+	/*border: 5px solid darkslategray;*/
+	padding: 5% 10%;
+	font-size: 2.3vh;
+	letter-spacing: 0.1vw;
+	border: none;
+	background: #1683a0;
+	color: #fff;
+	transition: .7s;
+}
+.popup-screen .popup-box form .envio:hover{
+	background-color: #dadada;
+	color: #555;
+}
+.popup-screen .popup-box form .borrado{
+	/*border: 5px solid darkgoldenrod;*/
+	padding: 5% 10%;
+	font-size: 2.3vh;
+	letter-spacing: 0.1vw;
+	border: none;
+	transition: .7s;
+	background: #f1683a;
+	color: #fff;
+}
+.popup-screen .popup-box form .borrado:hover{
+	background-color: red;
+	color: #eee;
+}
+/* _______________________  S C R E E N   F L A S H  ________________________  F I N A L  */
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	.carousel{
+	/*border: 5px solid red;
+	background: pink;*/
+	width: 100vw;
+	height: 1470px;
+}
+
+	.carousel .list .item .content{
+		/*border: 5px solid blue;
+		background: skyblue;*/
+		top: 8vh;
+		width: 80vw;
+		height: 1280px;
+
+	}
+	.carousel .list .item .content .author{	/* EN LA VINA DEL SENOR */
+		/*border: 5px solid green;
+		background: greenyellow;*/
+		font-size: 2vh;
+		text-shadow: 1px 1px 1px black;
+	}
+	.carousel .list .item .content .title{ /* OBRA DE DIOS */
+		/*border: 5px solid green;
+		background: greenyellow;*/
+		font-size: 5.4vh;
+		line-height: 9vh;
+		text-shadow: 1px 1px 1px black;
+	}
+	.carousel .list .item .content .topic{	/* I.E.P. */
+		/*border: 5px solid purple;
+		background: plum;*/
+		font-size: 6vh;
+		line-height: 9vh;
+	}
+	.carousel .list .item .content .des{	/* POR QUE DE TAL MANERA */
+		/*border: 5px solid black;
+		background: gray;*/
+		width: 70%;
+		font-size: 2vh;
+	}
+	.carousel .list .item .content .des small{
+		margin-top: 2%;
+		font-size: 3vh;
+	}
+	.carousel .list .item .content .buttons{	/* VER MAS - CONOCENOS */
+		/*border: 5px solid darkmagenta;
+		background: magenta;*/
+		height: 5vh;
+		width: 75%;
+		gap: 1.5vw; /* La separacion entre los botones */
+		margin-top: 2.2vh;
+	}
+	.carousel .list .item .content button{ /* Ver mas - Conocenos */
+	letter-spacing: 0.4vw; /* Es la separacion entre letras */
+	font-size: 1.4vh; /* Tamano de las letras */
+	}
+
+	.thumbnail{  /* Miniaturas */
+	/*border: 5px solid maroon;
+	background: maroon;*/
+	bottom: 3vh;	/* Espacio entre el margen de abajo   */
+	left: 65%; 		/* Separacion entre el margen izquierdo y las figuritas */
+	gap: 2vw;		/* Separacion entre las figuritas */
+	}
+	.thumbnail .item{ /* Articulo */
+	/*border: 5px solid aqua;
+	background: mediumaquamarine;*/
+	width: 10vw;		/* Medida de anchura de las figuritas */
+	height: 27vh;		/* Medida de altura de las figuritas */
+	}
+
+	.arrows{  /* Flechas */
+	/*border: 5px solid black;
+	background-color: gray;*/
+	top: 79%;     /* tambien top: 80vh; */
+	left: 15vw;
+	width: 35.5%;
+	height: 11%;
+	gap: 2vw; /* Separacion entre los botones */
+	}
+	.arrows #prev, #next{ /* Flechas atras y siguiente */
+		/* Pendiente */
+	}
+	.thumbnail .item .content .title, .desc{
+	display: none;	 /* o tambien podria ser VISIBILITY:HIDDEN */
+	}
+}

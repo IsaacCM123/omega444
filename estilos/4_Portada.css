@@ -1,0 +1,172 @@
+/* Portada */
+.portada{
+	/*border: 5px solid red;
+	background: pink;*/
+	height: 90vh;
+	background-image: url(../imagenes/1.jpg);
+	background-size: 130%;
+	animation: movimiento 25s infinite linear alternate;
+	position: relative;
+}
+@keyframes movimiento{
+	from{
+		background-position: bottom left;
+	}to{
+		background-position: top right;
+	}
+}
+		.capa{
+			/*border: 5px solid blue;
+			background: skyblue;*/
+			width: 100%;	/* Con el 100% y 80vh lo bajamos como una cortina o velo tapando todo los elementos por que tiene position: absolute poniendo por delante de todos los elementos*/
+			height: 90vh;
+			position: absolute;	/* Para que la capa se vaya atras de todos los elementos  */
+			background: -webkit-linear-gradient(left, black, #0672d0); 	/* !Los dos trabajan solo uno no funciona */
+			opacity: 0.5;												/* !Los dos trabajan solo uno no funciona */
+		}
+				.container{
+					/*border: 5px solid green;
+					background: greenyellow;*/
+					height: 90vh;
+					position: relative;  	/* Ponemos delante del velo todos los elementos para que sean visibles */
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+						.detalle{
+							/*border: 5px solid purple;
+							background: plum;*/
+							height: 45vh;
+							margin-top: 10%;
+							margin-left: 6%;
+						}
+								.detalle h1{
+									/*border: 5px solid black;
+									background: gray;*/
+									height: 10vh;
+									width: 15%;
+									font-size: 5vh;
+									font-size: 9vh;
+									color: #f1683a;
+									text-shadow: 1px 1px 1px black;
+									margin-bottom: 1vh;
+								}
+								.detalle p{
+									/*border: 5px solid yellow;
+									background: lightyellow;*/
+									height: 10vh;
+									font-size: 2.5vh;
+									text-shadow: 1px 1px 1px black;
+									margin: 0;
+									width: 50%;
+									text-align: left;
+									margin-bottom: 1vh;
+									color: #fff;
+								}
+								.detalle small{
+									display: block;
+									font-family: "Allura", cursiva;
+									font-size: 3.3vh;
+									color: white;
+									text-shadow: 2px 2px 2px black;
+									margin-bottom: 3vh;
+								}
+
+/*								.allura-regular { font-family: "Allura", cursiva; peso de fuente: 400; estilo de fuente: normal; }*/
+
+								.detalle button{
+									width: 25%;
+									height: 7vh;
+									background-color: transparent;
+									border: none;
+								}
+								.detalle button a{
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									height: 100%;
+									letter-spacing: 0.1vw;
+									border: 1px solid #fff;
+									font-size: 2.2vh;
+									transition: .7s;
+								}
+								.detalle button a:hover{
+									background-color: #eee;
+									color: #555;
+								}
+								.portada .container .botonAbajo{
+									/*border: 5px solid darkred;
+									background: red;*/
+									margin-right: 4%;
+								}
+								.portada .container .botonAbajo a ion-icon{
+									/*border: 5px solid darkblue;
+									background: blue;*/
+									font-size: 9vh;
+									color: #fff;
+									transition: .7s;
+								}
+								.portada .container .botonAbajo a ion-icon:hover{
+									color: #bababa;
+								}
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	.portada{
+		/*border: 5px solid darkred;
+		background: red;*/
+		/*background-size: 170vh;*/
+		background-size: 420%;
+		height: 1750px;
+	}
+	.capa{
+		/*border: 5px solid darkblue;
+		background: blue;*/
+		height: 1750px;
+	}
+	.container{
+		/*border: 5px solid green;
+		background: greenyellow;*/
+		display: block;
+		height: 1750px;
+		margin-left: 8%;
+	}
+	.detalle{
+		/*border: 5px solid blue;
+		background: skyblue;*/
+		margin-top: 55%;
+		height: 950px;
+	}
+	.detalle h1{  /* I.E.P. */
+		/*border: 5px solid purple;
+		background: plum;*/
+		text-shadow: 1px 1px 1px black;
+		width: 45%;
+	}
+	.detalle p{  /* Por que de tal manera */
+		/*border: 5px solid black;
+		background: gray;*/
+		height: 20vh;
+		width: 75%;
+	}
+	.detalle small{
+		/*border: 5px solid purple;
+		background: plum;*/
+		font-size: 3.3em;
+	}
+	.detalle button{   /* EVENTOS */
+		width: 60%;
+	}
+	.detalle button a{
+		font-size: 3em;
+		letter-spacing: 4px;
+		border: 0.1em solid #fff;
+	}
+	.detalle button a:hover{
+		background-color: #eee;
+		color: #555;
+	}
+	.portada .container .botonAbajo{
+		display: none;
+	}
+}

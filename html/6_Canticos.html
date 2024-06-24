@@ -1,0 +1,622 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>I.E.P. 1° De Mayo</title>	<!-- Titulo en la pestana del navegador -->
+		<link rel="shortcut icon" href="../iconos/icono.gif">	<!-- Icono en la pestana del navegador -->
+		<link rel="stylesheet" href="../estilos/1_Encabezamiento.css"> <!-- Hoja de estilo del encabezamiento -->
+		<link rel="stylesheet" href="../estilos/2_PieDePagina.css">
+		<link rel="stylesheet" href="../estilos/6_Canticos.css">
+		<link rel="stylesheet" href="../estilos/7_Bot_Cant.css">
+		<link rel="stylesheet" href="../estilos/14_PortaIMGenCanticos.css">
+		<link rel="stylesheet" href="../estilos/22_videosCoristasCanticos.css">
+		<link rel="stylesheet" href="../estilos/24_AnimacionInformacionCanticos.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Allura&family=Satisfy&display=swap" rel="stylesheet">
+
+		<!-- I M P O R T A M O S   L A   A P I   P A R A   R E P R O D U C I R   V I D E O  C O N   M E D I A - E L E M E N T -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+	</head>
+	<body>
+		<!-- E N C A B E Z A M I E N T O - I N I C I O -->
+		<header>
+			<img src="../logos/logo.gif">	<!-- Logo de la empresa -->
+			<input type="checkbox" id="Deslizable">	<!--Menu deslizable para celular -->
+			<label id="amburguesa" onclick="cambiar()" for="Deslizable">&#8801;</label>
+				<nav>
+					<a href="../principal.html">INICIO</a>
+					<a href="5_Obreros.html">OBREROS</a>
+					<a href="8_Trabajos.html">TRABAJOS</a>
+					<a href="11_Predicas.html">PREDICAS</a>
+					<a href="6_Canticos.html">CANTICOS</a>
+					<a href="3_Ofrendas.html">OFRENDAS</a>
+				</nav>
+		</header>
+		<!-- E N C A B E Z A M I E N T O - F I N A L -->
+
+
+
+
+		<!-- P O R T A   I M A G E N E S   D E   L O S   C O R I S T A S   -   I N I C I O -->
+		<center>
+				<div class="global">
+					<div class="invitacion">
+						<h4>CUERPO CORAL 1° DE MAYO</h4>
+						<small>Salmos Cap.69 Ver.30-31</small>
+						<p>Alabaré yo el nombre de Dios con cántico. Lo exaltaré con alabanza.Y agradará
+						a Jehová más que sacrificio de buey, o becerro que tiene cuernos y pezuñas.<br>
+						Querido amigo se parte del cuerpo coral donde aprenderemos a ofrendar alabanzas,
+						canticos a nuestro Dios todo poderoso. Queda cordialmente invitado, Dios lo bendiga!!.</p>
+						<div class="unirte">
+							<div><img src="../iconos/agenda.png"><b>2024 - Domingos Hrs. 14:00 - 17:30</b></div>
+							<div><img src="../iconos/ubicacion.png"><b>Cbba - Bolivia Barrrio 1° de mayo I.E.P. 1° de mayo</b></div>
+							<div><img src="../iconos/llamar.png"><b>Para más información llamar al 591+78315086</b></div>
+						</div>
+					</div>
+
+					<div class="slider">
+						<ion-icon id="contactanos1" name='image-outline'></ion-icon>
+						<div class="list">
+							<div class="item"><img src="../fotos/Coristas-Cantico/1.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/2.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/3.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/4.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/5.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/6.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/7.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/8.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/9.jpg"></div>
+							<div class="item"><img src="../fotos/Coristas-Cantico/10.jpg"></div>
+						</div>
+						<!-- Botones Anterior Posterior -->
+						<div class="buttons">
+							<button id="prev"><</button>
+							<button id="next">></button>
+						</div>
+						<!-- Dots o en espanol puntos ( 5 items o articulo ) -->
+						<ul class="dots">
+							<li class="active"></li>
+							<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+						</ul>
+					</div>
+
+					<div class="contactosCoristas">
+						<a href="https://www.facebook.com/groups/446586037748392">
+							<ion-icon class="fac" name="logo-facebook"></ion-icon>
+						</a>
+						<a href="https://x.com/IEP_1ro_de_Mayo?t=tYf5MN01XgdzLakfRv6J8g&s=08">
+							<ion-icon class="twi" name="logo-xing"></ion-icon>
+						</a>
+						<a href="https://www.youtube.com/@IEP-1ro-De-Mayo">
+							<ion-icon class="you" name="logo-youtube"></ion-icon>
+						</a>
+						<a href="https://wa.me/59177994047">
+							<ion-icon class="wha" name="logo-whatsapp"></ion-icon>
+						</a>
+						<a href="mailto:iep1rodemayo@gmail.com">
+							<ion-icon class="gma" name="mail-outline"></ion-icon>
+						</a>
+						<a href="https://maps.app.goo.gl/bohw1DnCfFGShxuw8">
+							<ion-icon class="ubi" name="location-outline"></ion-icon>
+						</a>
+					</div>
+
+
+					<div class="contactosCoristas-Celular">
+						<a href="https://www.facebook.com/groups/446586037748392">
+							<ion-icon class="fac" name="logo-facebook"></ion-icon>
+						<a href="https://x.com/IEP_1ro_de_Mayo?t=tYf5MN01XgdzLakfRv6J8g&s=08">
+							<ion-icon class="twi" name="logo-xing"></ion-icon>
+						</a>
+						<a href="https://www.youtube.com/@IEP-1ro-De-Mayo">
+							<ion-icon class="you" name="logo-youtube"></ion-icon>
+						</a>
+						<a href="https://wa.me/59177994047">
+							<ion-icon class="wha" name="logo-whatsapp"></ion-icon>
+						</a>
+						<a href="mailto:iep1rodemayo@gmail.com">
+							<ion-icon class="gma" name="mail-outline"></ion-icon>
+						</a>
+						<a href="https://maps.app.goo.gl/bohw1DnCfFGShxuw8">
+							<ion-icon class="ubi" name="location-outline"></ion-icon>
+						</a>
+					</div>
+
+
+				</div>
+		</center>
+
+			<!-- S C R E E N   F L A S H    -   I N I C I O -->
+				<div class="popup-screen">
+					<div class="popup-box">
+						<ion-icon class="close-btn1" name="close-outline"></ion-icon>
+						<div class="slider1">
+							<div class="list1">
+								<div class="item1"><img src="../fotos/Coristas-Cantico/1.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/2.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/3.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/4.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/5.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/6.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/7.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/8.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/9.jpg"></div>
+								<div class="item1"><img src="../fotos/Coristas-Cantico/10.jpg"></div>
+							</div>
+							<!-- Botones Anterior Posterior -->
+							<div class="buttons1">
+								<button id="prev1"><</button>
+								<button id="next1">></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- S C R E E N   F L A S H    -   F I N -->
+
+		<!-- P O R T A   I M A G E N E S   D E   L O S   C O R I S T A S   -   F I N A L -->
+
+
+		<!-- C O N T E N I D O   A N I M A C I O N   I N F O R M A C I O N   D E   L O S   C O R I S T A S   -   I N I C I O  -->
+		<center>
+			<div class="principal">
+				<div class="primeraCaja">
+					<div class="mitadArriba1">
+						<h2>IGLESIA EVANGÉLICA PENTECOSTAL - 1° DE MAYO</h2>
+					</div>
+					<div class="mitadAbajo1">
+						<p>Le invita a usted!.. Muy cordialmente a formar parte del CUERPO CORAL en nuestra amada iglesia</p>
+					</div>
+				</div>
+				<div class="segundaCaja">
+					<div class="mitadArriba2">
+						<h2>SU PRESENCIA SERÁ DE MUY GRANDE BENDICIÓN</h2>
+					</div>
+					<div class="mitadAbajo2">
+						<p>Solo necesita las ganas y la voluntad para alabar a nuestro Dios todo poderoso</p>
+					</div>
+				</div>
+				<div class="terceraCaja">
+					<div class="mitadArriba3">
+						<h2>LA OFRENDA CON CÁNTICOS DELEITA MÁS QUE SACRIFICIO DE BUEY</h2>
+					</div>
+					<div class="mitadAbajo3">
+						<p>Será muy recompensado en el reino de los cielos por el todo poderoso que vive y reina por los siglos de los siglos</p>
+					</div>
+				</div>
+			</div>	
+		</center>
+		<!-- C O N T E N I D O   A N I M A C I O N   I N F O R M A C I O N   D E   L O S   C O R I S T A S   -   F I N A L -->
+
+
+		<!-- P R I M E R   A L B U M   I . E . P .   C O R I S T A S   V I D E O   -   I N I C I O -->
+		<center>
+				<div class="acordeonCLS" id="acordeonID" tabindex="0">
+					<!-- P O R T A D A   D E L   A L B U M -->
+					<div class="primeraDivision">
+						<div class="barra555Principal">ALBUM CORO I.E.P. 1° DE MAYO</div>
+						<div class="portadaAlbum">
+							<picture>
+								<source media="(max-width: 991px)" srcset="../imagenes/CanticosCoristasVideos/portada2Celular.jpg"/>
+								<img src="../imagenes/CanticosCoristasVideos/portada1Laptop.jpg">
+							</picture>
+						</div>
+					</div>
+					<!-- 1 °   C O R O -->
+					<div class="primeraDivision">
+						<div class="barra555Principal">SOLO DIOS</div>
+						<div class="contenidoPrimeraDivision">
+							<div class="panel">
+								<div class="campoVideoMP4">
+									<video width='100%' height='100%' poster="../imagenes/CanticosCoristasVideos/posters/poster-1.jpg">
+										<source src="../video/albumCanticos/Coro-1.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="pasajeBiblico">
+									<img src="../imagenes/CanticosCoristasVideos/IMGfondoPasajeBiblico1.jpg">
+									<small>Deuteronomio Cap.23 Ver.8</small>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 2 °   P R E D I C A -->
+					<div class="primeraDivision">
+						<div class="barra555Principal">VA A PASAR</div>
+						<div class="contenidoPrimeraDivision">
+							<div class="panel">
+								<div class="campoVideoMP4">
+									<video width='100%' height='100%' poster="../imagenes/CanticosCoristasVideos/posters/poster-2.jpg">
+										<source src="../video/albumCanticos/Coro-2.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="pasajeBiblico">
+									<img src="../imagenes/CanticosCoristasVideos/IMGfondoPasajeBiblico2.jpg">
+									<small>Apocalipsis Cap.28 Ver.12</small>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 3 °   P R E D I C A -->
+					<div class="primeraDivision">
+						<div class="barra555Principal">EL QUIERE ENTRAR</div>
+						<div class="contenidoPrimeraDivision">
+							<div class="panel">
+								<div class="campoVideoMP4">
+									<video width='100%' height='100%' poster="../imagenes/CanticosCoristasVideos/posters/poster-3.jpg">
+										<source src="../video/albumCanticos/Coro-3.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="pasajeBiblico">
+									<img src="../imagenes/CanticosCoristasVideos/IMGfondoPasajeBiblico3.jpg">
+									<small>2 Tesalonicenses Cap.32 Ver.8</small>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</center>
+		<!-- P R I M E R   A L B U M   I . E . P .   C O R I S T A S   V I D E O   -   F I N A L -->
+
+		<!-- A L B U M   D E   C O R O S   1°   D E   M A Y O  -  I N I C I O -->
+		<center>
+			<div class="wrapper">
+				<div class="container">
+
+					<input type="radio" name="slide" id="c1" checked>
+					<label for="c1" class="card">
+						<div class="row">
+							<div class="icon">1</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- P R I M E R A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button1" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar1()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar1()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c2" checked>
+					<label for="c2" class="card">
+						<div class="row">
+							<div class="icon">2</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- S E G U N D A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button2" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar2()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar2()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c3" checked>
+					<label for="c3" class="card">
+						<div class="row">
+							<div class="icon">3</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- T E R C E R A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button3" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar3()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar3()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c4" checked>
+					<label for="c4" class="card">
+						<div class="row">
+							<div class="icon">4</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- C U A R T A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button4" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar4()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar4()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c5" checked>
+					<label for="c5" class="card">
+						<div class="row">
+							<div class="icon">5</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- Q U I N T A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button5" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar5()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar5()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c6" checked>
+					<label for="c6" class="card">
+						<div class="row">
+							<div class="icon">6</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- S E X T A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button6" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar6()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar6()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c7" checked>
+					<label for="c7" class="card">
+						<div class="row">
+							<div class="icon">7</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- S E P T I M A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button7" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar7()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar7()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c8" checked>
+					<label for="c8" class="card">
+						<div class="row">
+							<div class="icon">8</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- O C T A V A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button8" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar8()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar8()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c9" checked>
+					<label for="c9" class="card">
+						<div class="row">
+							<div class="icon">9</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- N O V E N A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button9" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar9()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar9()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+					<input type="radio" name="slide" id="c10" checked>
+					<label for="c10" class="card">
+						<div class="row">
+							<div class="icon">10</div>
+							<div class="description">
+								<h4>I.E.P.</h4>
+								<p>No es buen arbol el que da malos frutos, ni arbol malo el que da buen fruto</p>
+								<small>San Lucas Cap.6 Ver.43</small>
+									<!-- D E C I M A   cancion a reproducir inicio -->
+										<div class="boton">
+											<button id="button10" title="Reproducir" class="r">
+												<ion-icon name="play-circle-outline"></ion-icon>
+											</button>
+											<button onclick="parar10()" title="Parar" class="p">
+												<ion-icon name="stop-circle-outline"></ion-icon>
+											</button>
+											<button title="Descargar" class="d" onclick="Descargar10()">
+												<ion-icon name="cloud-download-outline"></ion-icon>
+											</button>
+										</div>
+									<!-- Cancion a reproducir final -->
+							</div>
+						</div>
+					</label>
+
+				</div>
+			</div>	
+		</center>
+		<!-- A L B U M   D E   C O R O S   1°   D E   M A Y O  -  F I N A L -->
+
+		<!-- P I E  D E  P A G I N A - I N I C I O -->
+		<footer>
+			<div class="container_1">
+				<div class="informacion">
+					<h3>SOBRE NOSOTROS</h3><hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.Mi nombre  ICM.</p>
+				</div>
+				<div class="redesSociales">
+					<h3>REDES SOCIALES</h3><hr>
+					<!-- Pagina Facebook -->
+					<a href="https://www.facebook.com/groups/446586037748392">
+						<ion-icon class="fac" name="logo-facebook"></ion-icon>Facebook
+					</a>
+					<a href="https://x.com/IEP_1ro_de_Mayo?t=tYf5MN01XgdzLakfRv6J8g&s=08">
+						<ion-icon class="twi" name="logo-xing"></ion-icon>TwiX
+					</a>
+					<!-- Pagina Youtube -->
+					<a href="https://www.youtube.com/@IEP-1ro-De-Mayo">
+						<ion-icon class="you" name="logo-youtube"></ion-icon>Youtube
+					</a>
+				</div>
+				<div class="contactos">
+					<h3>CONTACTOS</h3><hr>
+					<!-- Pagina Whatsapp -->
+					<a href="https://wa.me/59177994047">
+						<ion-icon class="wha" name="logo-whatsapp"></ion-icon>Whatssap
+					</a>
+					<!-- Pagina Gmail -->
+					<a href="mailto:iep1rodemayo@gmail.com">
+						<ion-icon class="gma" name="mail-outline"></ion-icon>Gmail
+					</a>
+					<!-- Pagina Locacion -->
+					<a href="https://maps.app.goo.gl/bohw1DnCfFGShxuw8">
+						<ion-icon class="ubi" name="location-outline"></ion-icon>Ubicacion
+					</a>
+				</div>
+			</div>
+			<div class="container_2">
+				<div>
+					<small>&copy; 2024 <b>I.E.P.</b> - Todos los Derechos Reservados.</small>
+				</div>
+			</div>	
+		</footer>
+		<!-- P I E   D E   P A G I N A - F I N A L -->
+
+
+
+
+
+		<!-- I M P O R T A M O S   L A   A P I   P A R A   R E P R O D U C I R   V I D E O   C O N   M E D I A - E L E M E N T -->
+		<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
+		<script src="../script/22_videosCoristasMediaElement.js"></script>
+
+		<!-- Estilos para los iconos de Facebook, Whatssap, etc... -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<!-- E F E C T O   A C O R D E O N   V I D E O S   C O R I S T A S -->
+		<script src="../script/23_AcordeonAlbumCanticos.js"></script>
+		<script>new Spry.Widget.Accordion("acordeonID");</script>
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="../script/24_AnimacionInformacionCanticos.js"></script>
+
+		<!-- Para reproducir musicas codificados -->
+		<script src="../codificados/1/2_C1.js"></script>
+		<script src="../codificados/2/2_C2.js"></script>
+		<script src="../codificados/3/2_C3.js"></script>
+		<script src="../codificados/4/2_C4.js"></script>
+		<script src="../codificados/5/2_C5.js"></script>
+		<script src="../codificados/6/2_C6.js"></script>
+		<script src="../codificados/7/2_C7.js"></script>
+		<script src="../codificados/8/2_C8.js"></script>
+		<script src="../codificados/9/2_C9.js"></script>
+		<script src="../codificados/10/2_C10.js"></script>
+		<!-- Para reproducir musicas codificados con condiciones if-else -->
+		<script src="../script/2_Canticos.js"></script>
+		
+		<script src="../script/3_Amburguesa.js"></script>
+		<script src="../script/15_PortaIMGenCanticosJS.js"></script>
+		<script src="../script/14_PortaIMGenCanticosJS.js"></script>
+		
+		<!-- Descargar archivos base64 convertidos a formato .mp3   M de Musica-->
+		<script src="../descargas/M1.js"></script>
+		<script src="../descargas/M2.js"></script>
+		<script src="../descargas/M3.js"></script>
+		<script src="../descargas/M4.js"></script>
+		<script src="../descargas/M5.js"></script>
+		<script src="../descargas/M6.js"></script>
+		<script src="../descargas/M7.js"></script>
+		<script src="../descargas/M8.js"></script>
+		<script src="../descargas/M9.js"></script>
+		<script src="../descargas/M10.js"></script>
+	</body>
+</html>

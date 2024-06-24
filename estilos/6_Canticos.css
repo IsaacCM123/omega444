@@ -1,0 +1,222 @@
+/* Canticos */
+
+.wrapper{ /* Envoltura - Empaque */
+	/*border: 5px solid red;
+	background: pink;*/
+	width: 97vw; /* Utilizamos 96VW por que ajustamos la anchura en base a la ventana WEB y como es el padre los demas DIV hijos deveran estar acoplados al DIV padre. Ocea NO con VW. sino con porcentage % para que la anchura sea en base al padre y no a la ventana */
+	height: 51vh;
+	align-items: center; /* Para que se posicione al centro verticalmente, solo funciona con display-flex. */
+	display: flex;
+	justify-content: center;/* Para que se posicione al centro horizontalmente. */
+	margin-top: 4vh;
+}
+.container{ /* Su hijo es card */
+	/*border: 5px solid blue;
+	background: skyblue;*/
+	width: 99%; /* 98% En base al DIV padre acoplado y no a la ventana. */
+	height: 49vh;
+	display: flex;	/* Como card es su hijo los elementos card se alinean en forma horizontal */
+	justify-content: center;
+}
+.wrapper .container input{
+	display: none;
+}
+.card{ /*Targeta - Carta */     /* Container es padre de card */
+	/*border: 5px solid green;
+	background: greenyellow;*/
+	width: 3.8vw;	/* Anchura delgada a las 10 targetas *//* 3.8vw Para que no se desproporcione la anchura */
+	height: 47vh; /* La altura de las targetas o cartas */
+	display: flex;	/* Aparecen todos los elementos que contiene card */
+	align-items: center; /* A todos sus elementos [titulo, parrafo, controles de reproduccion] les poseciona en el centro en base a la ALTURA */
+	border-radius: .75rem; /* Bordes estilo circular */
+	border-radius: 2rem;	/* Bordes estilo circular */
+	margin: 0 0.5vh; /* espacio derecha entre las targetas */
+	background-size: cover; /* Acopla y/o ajusta las imagenes 4K en el centro y de un tamano minimizado.  */
+	overflow: hidden; /* Para que todos los elementos de card [titulo, parrafo, indice, botones] se adentren dentro de cada targeta */
+	transition: .6s cubic-bezier(.28,-0.03,0,.99); /* Da una animacion mas elegante a cuando hacemos click a una imagen para verlo. */
+	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.card > .row{ /* Fila */
+	/*border: 5px solid purple;
+	background: plum;*/
+	width: 50vw; /* Le cambiamos con 50vw por que hay problemas con e otro  -> *//* Le damos 97% para que tome como base al DIV Padre y no se desproporciona la anchura.. Mientras con width: 47vw; la anchura se desproporciona. */
+	height: 46vh;
+	color: white; /* Para que todos los elementos [letras] sean blancos */
+	/* en este punto los elementos [indice, titulo, parrafo, botones de control de reproduccion] estan acomodados verticalmente */
+	display: flex; /* Los elementos le acomodamos en forma horizontal */
+	align-items: center;
+}
+
+.card > .row > .icon{ /* Los numeros indices [1 2 3 4 5 6 etc...] */
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 3vw;		/* Tamano de anchura */
+	height: 6vh;	/* Tamano de altura */
+	background: #223; /* Fondo negro  a los numeros */
+	border-radius: 50%; /* Bordes circulares a los numeros */
+	font-size: 2.5vh;	/* Tamano de los numeros */
+	align-items: center; /* Para que se posicione los numeros al centro verticalmente, solo funciona con display-flex. */
+	display: flex; /* Para que los numeros se posecionen al centro verticalmente */ 
+	justify-content: center;/* Para que los numeros se posecionen al centro horizontalmente */
+	margin: 39vh 0vh 0vh 1.1vh; /* Para que los numeros esten abajo de las targetas */
+}
+
+.card > .row > .description{
+	/*border: 5px solid yellow;
+	background: lightyellow;*/
+	width: 90%; /* Trabaja bien con esto!!!! */
+	height: 40vh;
+	display: flex; /* Para que esten en posicion horizontal */
+	flex-direction: column;/* Para que esten en posicion horizontal */
+	justify-content: center;/* Para que se posicione al centro verticalmente, solo funciona con display-flex. */
+}
+
+.description h4{
+	/*border: 5px solid coral;
+	background: lightcoral;*/
+	color: #f1683a;
+	font-size: 6vh;
+}
+
+.description p{
+	/*border: 5px solid salmon;
+	background: lightsalmon;*/
+	text-shadow: 1px 1px 1px black;
+	font-size: 2.5vh;
+																												margin-top: 15px; /* Cambiar a margin-top a 1vh */
+}
+.description small{
+	display: block;
+	font-family: "Allura", cursiva;
+	font-size: 3.3vh;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+																												margin-top: 10px;  /* Cambiar a margin-top a 1vh */
+}
+.wrapper .container input:checked + label{
+	width: 53vw;
+}
+.card[for ='c1']{
+	background-image: url(../fotos/IMG-fondos-Canticos/1.jpg);
+}
+.card[for ='c2']{
+	background-image: url(../fotos/IMG-fondos-Canticos/2.jpg);
+}
+.card[for ='c3']{
+	background-image: url(../fotos/IMG-fondos-Canticos/3.jpg);
+}
+.card[for ='c4']{
+	background-image: url(../fotos/IMG-fondos-Canticos/4.jpg);
+}
+.card[for ='c5']{
+	background-image: url(../fotos/IMG-fondos-Canticos/5.jpg);
+}
+.card[for ='c6']{
+	background-image: url(../fotos/IMG-fondos-Canticos/6.jpg);
+}
+.card[for ='c7']{
+	background-image: url(../fotos/IMG-fondos-Canticos/7.jpg);
+}
+.card[for ='c8']{
+	background-image: url(../fotos/IMG-fondos-Canticos/8.jpg);
+}
+.card[for ='c9']{
+	background-image: url(../fotos/IMG-fondos-Canticos/9.jpg);
+}
+.card[for ='c10']{
+	background-image: url(../fotos/IMG-fondos-Canticos/10.jpg);
+}
+
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	/*1*/.wrapper{
+	/*border: 5px solid red;
+	background: pink;*/
+	width: 95vw;
+	height: 1600px;
+	}
+	/*2*/.container{
+	/*border: 5px solid blue;
+	background: skyblue;*/
+	width: 98%;
+	height: 1550px;
+	flex-direction: column;
+	align-items: center;
+	}
+	/*3*/.card{
+	/*border: 5px solid green;
+	background: greenyellowe;*/
+	width: 99%;
+	height: 100px;
+	margin-top: 1vh;
+		.description p{
+		visibility: hidden;
+		}
+	}
+
+	/*4*/.wrapper .container input:checked + label{
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 99%;	/* Tamano de anchura de las cartas */
+	height: 420px;	/* Tamano de altura de las cartas */
+		.boton button{
+		visibility: visible; /* Los botones de control lo hago visible para que se pueda controlar [lo descactivo en 7_Bot_Cant.css] .boton button */
+		}
+		.description p{
+		visibility: visible;
+		}
+		.description small{
+		visibility: visible;
+		}
+	}
+
+	/*5*/.card > .row{
+	/*border: 5px solid purple;
+	background: plum;*/
+	width: 99%;
+	height: 390px;
+	}
+
+	/*6*/.card > .row > .icon{  /*Iconos denumeracion 1 2 3 4 5 etc.*/
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 85px; 		 /*Tamano de los circulos*//* Le doy 200px ya no se anchea mas que con 85% */
+	height: 75px;		 /*Tamano de los circulos*/
+	margin: 0 0 0 20;
+	font-size: 35px;	 /*Tamano de los numeros*/
+	}
+
+	/*7*/.card > .row > .description{
+	/*border: 5px solid darkred;
+	background: red;*/
+	display: block;
+	width: 90%;	/* longitud de ancho del area del parrafo (Descripcion) */
+	height: 370px; 	/* longitud de alto del area del parrafo (Descripcion) */
+	}
+
+	.description h4{ 	/* I.E.P. */
+	/*border: 5px solid black;
+	background: gray;*/
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	font-size: 70px;  /* Tamano de las letras */
+	}
+
+	.description p{		/* Jehova es mi pastor. . . */
+	/*border: 5px solid green;
+	background:greenyellow;*/
+	width: 95%;
+	height: 100px;
+	font-size: 35px; /* Tamano de las letras */
+	}
+	.description small{
+		/*border: 5px solid purple;
+		background: plum;*/
+		font-family: "Allura", cursiva;
+		font-size: 2vh;
+		margin-top: -1%;
+		visibility: hidden; /* Lo ponemos invisible por que esteticamente se ve las letras cuando esta en modo miniatura */
+	}
+}

@@ -1,0 +1,85 @@
+.cajaPrincipal{
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	width: 85vw;
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 5vh;
+	border-radius: 1vw;
+}
+.miVideo{
+	width: 50%;
+	height: 80.2%;
+	border-radius: 1vw;
+	overflow: hidden;
+	box-shadow: 0.5vh 0.5vh 1vh black;
+}
+.cajaPrincipal .pasajeBiblico1{
+	border: 0.3vh solid #fff;
+	border-radius: 1vw;
+	width: 40%;
+	height: 80.2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.cajaPrincipal .pasajeBiblico1 H2{
+	color: #fff;
+	font-size: 5vh;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 2vh;
+}
+.cajaPrincipal .pasajeBiblico1 small{
+	font-family: "Allura", cursiva;
+	font-size: 3.9vh;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+.cajaPrincipal .pasajeBiblico1 p{
+	font-size: 2.7vh;
+	color: #fff;
+	text-shadow: 2px 2px 2px black;
+	letter-spacing: 0.1vh;
+	text-align: justify;
+	margin: 1vh 4vh 0vh 4vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 4vh;
+	border-radius: 1vw;
+	box-shadow: 2px 2px 2px black;
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| R E S P O N S I V E   C E L U L A R |||||||||||||||||||||||||||||||||||||||||||||| */
+@media(max-width: 991px){
+	.cajaPrincipal{
+		display: block;
+		width: 90vw;
+		height: 112vh;
+		background: none;
+	}
+	.miVideo{
+		width: 100%;
+		height: 30%;
+	}
+	.cajaPrincipal .pasajeBiblico1{
+		width: 100%;
+		margin-top: 3.5vh;
+		height: 66%;
+	}
+	.cajaPrincipal .pasajeBiblico1 H2{
+		font-size: 4.5em;
+		margin: 0;
+		margin-bottom: 2vh;
+		text-shadow: 0.4vw 0.4vw 0.6vw black;
+	}
+	.cajaPrincipal .pasajeBiblico1 small{
+		font-size: 3.7em;
+		font-weight: bold;
+		text-shadow: 0.4vw 0.4vw 0.6vw black;
+	}
+	.cajaPrincipal .pasajeBiblico1 p{
+		font-size: 2.8em;
+	}
+}

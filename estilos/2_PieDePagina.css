@@ -1,0 +1,208 @@
+/* Pie de pagina */
+body{
+																display: flex;			/* Para que se vaya abajo */
+																flex-direction: column;	/* Para que se vaya abajo */
+}
+
+footer{
+/*	border: 5px solid red;*/
+/*	background: pink;*/
+	background: rgba(0, 0, 0, .5);
+/*	width: 100%;  Poner un width 100% o vw hace que el screen se desborde y activa el scroll*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+																margin-top: auto;		/* Para que se vaya abajo */
+	height: 39vh;
+	}
+			.container_1{
+/*			border: 5px solid blue;*/
+/*			background: skyblue;*/
+			display: flex;
+			align-items: center;	/* Para que todos los elementos se centreen en base a la altura */
+			justify-content: space-around;
+			height: 30vh;
+			}
+					.informacion{
+/*					border: 5px solid green;*/
+/*					background: greenyellow;*/
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					height: 27vh;
+					font-size: 1.2vw;		/* Para que el texto no pierda el tamano original cuando hagamos LUPA al 25% ó hasta el 500%. */
+					}
+						h3{
+/*							border: 5px solid black;*/
+/*							background: gray;*/
+							color: #fff;
+							height: 3.2vh;	/* Apicamos el views height para que no pierda su proporsion de altura a la pantalla */
+							}
+						p{
+/*							border: 5px solid purple;*/
+/*							background: plum;*/
+							text-align: center;							
+							color: #fff;
+							margin: 0 30 0 30;
+							}
+					.redesSociales{
+/*					border: 5px solid green;*/
+/*					background: greenyellow;*/
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					height: 27vh;
+					font-size: 1.1vw;	/* Para que el texto no pierda el tamano original cuando hagamos LUPA al 25% ó hasta el 500%. */
+					}
+							.container_1 .redesSociales a, .contactos a{
+							/*border: 5px solid blueviolet;
+							background: violet;*/
+							color: #fff;
+							text-decoration: none;
+							display: flex;			/* Para centrear en el medio en base a la altura */
+							align-items: center;	/* Para centrear en el medio en base a la altura */
+							width: 40%;
+							margin-bottom: 1vh;
+							transition: .7s;
+							}
+							.container_1 .redesSociales a:hover, .contactos a:hover{
+								color: #d5d5d5;
+							}
+							footer .container_1 a .fac{
+								/*color: #0855d2;*/
+								color: #fff;
+							}
+							footer .container_1 a .tik{
+								/*color: #a54cbf;*/
+								color: #fff;
+							}
+							footer .container_1 a .you{
+								/*color: #fe0000;*/
+								color: #fff;
+							}
+							footer .container_1 a .wha{
+								/*color: #1ba434;*/
+								color: #fff;
+							}
+							footer .container_1 a .gma{
+								/*color: #997a5b;*/
+								color: #fff;
+							}
+							footer .container_1 a .ubi{
+								/*color: #11ccc9;*/
+								color: #fff;
+							}
+							/* Tamano a los iconos de redes y contactos */
+							footer .container_1 div a ion-icon{
+								font-size: 5.3vh;
+								margin-right: 0.5vw;
+							}
+
+					.contactos{
+/*					border: 5px solid green;*/
+/*					background: greenyellow;*/
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					height: 27vh;
+					font-size: 1.1vw;	/* Para que el texto no pierda el tamano original cuando hagamos LUPA al 25% ó hasta el 500%. */
+					}
+								.container_1 hr{
+								width: 70%;
+								margin-top: 1.5vh;
+								margin-bottom:1.5vh ;
+								}
+			.container_2{
+/*			border: 5px solid black;*/
+/*			background: sienna;*/
+			background: black;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 8vh;
+			font-size: 1.3vw;
+			width: 100%;
+
+			}
+			.container_2 small{
+/*			border: 5px solid aqua;*/
+/*			background: mediumaquamarine;*/
+			color: white;
+			}
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+footer{
+/*	border: 5px solid red;
+	background: pink;*/
+	height: 2100px;
+	}
+			.container_1{
+/*			border: 5px solid blue;
+			background: skyblue;*/
+			display: flex;
+			flex-direction: column;
+			height: 1900px;
+			}
+					.informacion{
+/*					border: 5px solid green;
+					background: greenyellow;*/
+					justify-content: center;
+					width: 90%;
+					}
+						h3{
+/*							border: 5px solid black;
+							background: gray;*/
+							display: flex;
+							align-items: center;
+							text-align: center;
+							font-size: 3.7em;
+							}
+							footer .container_1 .informacion p{
+/*							border: 5px solid purple;
+							background: plum;*/
+							text-align: center;							
+							font-size: 3.5em;
+							width: 85%;
+							height: 300px;
+							line-height: 1.5; /* Para que haya un doble salto de linea entre las lineas de texto */
+							}
+					.redesSociales{
+/*					border: 5px solid green;
+					background: greenyellow;*/
+					display: flex;
+					width: 90%;
+					justify-content: center;
+/*					line-height: 3; Es muy eficas para hacer separaciones en las lineas de texto */
+					}
+							.container_1 .redesSociales a, .contactos a{
+/*							border: 5px solid red;
+							background: black;*/
+							width: 50%;
+							font-size: 3.7em;
+							margin: 5 0 5 0;
+							}
+					.contactos{
+/*					border: 5px solid green;
+					background: greenyellow;*/
+					display: flex;
+					width: 90%;
+					justify-content: center;
+/*					line-height: 3; Es muy eficas para hacer separaciones en las lineas de texto */
+					}
+					footer .container_1 div a ion-icon{
+							font-size: 6vh;
+							margin-right: 2vh;
+							margin-top: 0.3vh;
+						}
+			.container_2{
+				height:230px ;
+				text-align: center;
+			}
+			.container_2 small{
+			font-size: 3em;
+			}

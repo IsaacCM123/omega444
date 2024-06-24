@@ -1,0 +1,524 @@
+.wrapper{ /* Envoltura - Empaque */
+/*	border: 5px solid red;*/
+/*	background: pink;*/
+	width: 98vw;
+	height: 80vh;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+}
+.container{ /* Su hijo es card */
+/*	border: 5px solid blue;*/
+/*	background: skyblue;*/
+	width: 99%;
+	height: 99%;
+	display: flex;
+	justify-content: center;
+}
+.wrapper .container input{
+	display: none;
+}
+.card{ /*Targeta - Carta */
+/*	border: 5px solid green;*/
+/*	background: greenyellow;*/
+	width: 4vw;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: .75rem;
+	border-radius: 2rem;
+	margin: 0 0.5vh;
+	background-size: cover;
+	overflow: hidden;
+	transition: .6s cubic-bezier(.28,-0.03,0,.99);
+	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.card > .row{ /* Fila */
+/*	border: 5px solid purple;*/
+/*	background: plum;*/
+	width: 99.7%;
+	height: 95%;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.card > .row > .icon{ /* Los numeros indices [1 2 3 4 5 6 etc...] */
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 3vw;
+	height: 6vh;
+	background: #223;
+	border-radius: 50%;
+	font-size: 2.5vh;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 0vh 0vh 0vh 1.2vh;
+}
+
+.card > .row > .description{
+	/*border: 5px solid yellow;*/
+	/*background: lightyellow;*/
+	width: 90%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1.5%;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, .6);
+	display: none;
+}
+
+.description h4{
+	/*border: 5px solid coral;
+	background: lightcoral;*/
+	color: #fff;
+	font-size: 7vh;
+	margin-top: 5vh;
+}
+
+.description p{
+	/*border: 5px solid salmon;
+	background: lightsalmon;*/
+	font-size: 2.7vh;
+	padding: 0vh 3vh 2vh 3vh;
+	text-align: justify;
+}
+.description p b{
+	display: block;
+	text-align: center;
+}
+.description small{
+	display: block;
+	font-family: "Allura", cursiva;
+	font-size: 5vh;
+	color: #fff;
+	margin-top: 1vh;
+}
+.wrapper .container input:checked + label{
+	width: 75vw;
+	.description{
+		display: block;
+	}
+}
+.card[for ='c1']{
+	background-image: url(../fotos/IMG-Trabajos-Espirituales/1Ayunos.png);
+	background-size: cover;
+	background-position: center;
+}
+.card[for ='c2']{
+	background-image: url(../fotos/IMG-Trabajos-Espirituales/2Vigilias.png);
+	background-size: cover;
+	background-position: center;
+}
+.card[for ='c3']{
+	background-image: url(../fotos/IMG-Trabajos-Espirituales/3Oracion.png);
+	background-size: cover;
+	background-position: center;
+}
+.card[for ='c4']{
+	background-image: url(../fotos/IMG-Trabajos-Espirituales/4Visitas.png);
+	background-size: cover;
+	background-position: center;
+}
+.card[for ='c5']{
+	background-image: url(../fotos/IMG-Trabajos-Espirituales/5Predicas.png);
+	background-size: cover;
+	background-position: center;
+}
+.card[for ='c6']{
+	background-image: url(../fotos/IMG-Trabajos-Espirituales/6Estudios.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/* I N F O R M A C I O N   D E L   P A S T O R  - A R T I C U L O S   Y   C O N T E N I D O   -   I N I C I O */
+.articulos1{
+	/*border: 5px solid black;*/
+	background: #0a6c86;
+	margin-top: 4vh;
+	width: 98.5vw;
+	height: 55vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.articulos1 .imagenPastor{
+	width: 22%;
+	height: 80%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.articulos1 .imagenPastor img{
+	width: 100%;
+	height: 100%;
+}
+.articulos1 .infoPastor{
+	/*background-color: red;*/
+	width: 68%;
+	height: 75%;
+	text-align: justify;
+	padding: 1.5% 2% 1.5% 2%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 1.5vw;
+	color: #fff;
+}
+.articulos1 .infoPastor h2{
+	font-size: 4vh;
+}
+.articulos1 .infoPastor b{
+	display: block;
+	font-size: 2.8vh;
+	color: #fff;
+	margin-bottom: 1.3vh;
+}
+.articulos1 .infoPastor small{
+	display: block;
+	font-family: "Allura", cursiva;
+	font-size: 4.2vh;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 1vh;
+}
+.articulos1 .infoPastor p{
+	/*background-color: black;*/
+	text-align: justify;
+	margin: 0;
+	padding: 2.5%;
+	font-size: 2.5vh;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+	border-radius: 1.5vw;
+}
+/* I N F O R M A C I O N   D E L   P A S T O R  - A R T I C U L O S   Y   C O N T E N I D O   -   F I N A L */
+
+
+/* P O R T A I M A G E N E S   E N   M O V I M I E N T O   S O L O   P A R A   D I S P O S I T I V O S   M O V I L E S - I N I C I O */
+.slider{
+	display: none;
+}
+/* P O R T A I M A G E N E S   E N   M O V I M I E N T O   S O L O   P A R A   D I S P O S I T I V O S   M O V I L E S - F I N A L */
+
+/* P O R T A I M A G E N E S   E N   E F E C T O  R U E D A   S O L O   P A R A   C O M P U T A D O R A S - I N I C I O */
+.dimension-principal{
+	/*border: 5px solid red;
+	background: pink;*/
+	display: flex;
+	justify-content: center;
+	width: 97vw;
+	height: 0vh;
+	margin-top: 1vh;
+	margin-bottom: 85vh;
+}
+.caja{
+	/*border: 5px solid blue;
+	background: skyblue;*/
+	width: 25vw; /* width: 25vw; Tamano de las figuritas */
+	height: 0vh;  /* height: 0vh; Tamano del height no es necesario */
+	transform-style: preserve-3d;
+	animation: animate 70s linear infinite;   /* animate 70s Esto es para la velocidad del carrusel */
+}
+@keyframes animate{
+	0%{
+		transform: perspective(120vh) rotateY(0deg);   /* perspective(710px) Es para una panoramica desde arriba */
+	}
+	100%{
+		transform: perspective(120vh) rotateY(400deg);   /* perspective(710px) Es para una panoramica desde arriba  y  rotateY(330deg) es la velocidad del carrusel. */
+	}
+}
+.caja span{
+	/*border: 5px solid green;
+	background: greenyellow;*/
+	position: absolute;
+	width: 90%; /* Es la anchura de las figuritas  */ 
+	height: 25vh;   /* Es la altura de las figuritas  */ 
+	top: 60; /* Vista panoramica desde arriba */
+	left: 10;  /* lo mantiene centrado al carrusel */
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: rotateY(calc(var(--i) * 45deg)) translateZ(30vw); /* Esto es para la separacion de las figuritas */
+	-webkit-box-reflect: below 1vh linear-gradient(transparent, transparent, #0009);  /* #0009 Es para la tonalidad del reflejo de las figuritas y below 2vh es para la separacion del reflejo con las figuritas. */
+}
+.caja span img{
+	/*border: 5px solid purple;
+	background: plum;*/
+	width: 100%;
+	height: 100%;
+}
+/* P O R T A I M A G E N E S   E N   E F E C T O  R U E D A   S O L O   P A R A   C O M P U T A D O R A S - F I N A L */
+
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+
+/* A Y U N O   V I G I L I A S   O R A C I O N   V I S I T A S   P R E D I C A S   E S T U D I O S  - I N I C I O */
+	/*1*/.wrapper{
+	/*border: 5px solid red;*/
+	/*background: darkred;*/
+	width: 99vw;
+	height: 2200px;
+	margin-top: 3vh;
+	}
+	/*2*/.container{
+	/*border: 5px solid blue;*/
+	/*background: darkblue;*/
+	width: 99%;
+	height: 2190px;
+	flex-direction: column;
+	align-items: center;
+	}
+	/*3*/.card{
+	/*border: 10px solid green;*/
+	/*background: greenyellowe;*/
+	width: 100%;
+	height: 100px;
+	margin-top: 1vh;
+	}
+	/*4*/.wrapper .container input:checked + label{
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 100%;
+	height: 1570px;
+		.description{
+			visibility: visible;
+		}
+		.description p{
+		visibility: visible;
+		}
+	}
+	.card > .row{
+	/*border: 5px solid purple;
+	background: plum;*/
+	width: 100%;
+	height: 200px;
+	}
+
+	/*6*/.card > .row > .icon{  /*Iconos denumeracion 1 2 3 4 5 etc.*/
+	/*border: 5px solid black;
+	background: gray;*/
+	width: 85px;
+	height: 75px;
+	margin: 0 0 0 20;
+	font-size: 35px;
+	}
+	/*7*/.card > .row > .description{
+	/*border: 5px solid darkred;*/
+	/*background: black;*/
+	display: block;
+	width: 70%;
+	height: 1400px;
+	overflow: hidden;
+	padding: 0em 0.3em 0em 0.3em;
+	display: none;
+	}
+	.description h4{
+	/*border: 5px solid black;
+	background: gray;*/
+	text-align: center;
+	font-size: 0.35em;
+	}
+	.description p{
+	/*border: 5px solid green;
+	background:greenyellow;*/
+	margin: 0;
+	padding: 0;
+	font-size: 0.22em;
+	}
+	.description p b{
+	margin-bottom: 1em;
+	}
+	.description small{
+		/*border: 5px solid purple;
+		background: plum;*/
+		font-family: "Allura", cursiva;
+		font-size: 0.26em;
+		margin-top: 0.7em;
+		margin-bottom: 0.2em;
+	}
+
+	.card[for ='c1']{
+		background-image: url(../fotos/IMG-Trabajos-Espirituales/Responsive/1Ayunos.png);
+		background-size: cover;
+		background-position: center;
+	}
+	.card[for ='c2']{
+		background-image: url(../fotos/IMG-Trabajos-Espirituales/Responsive/2Vigilias.png);
+		background-size: cover;
+		background-position: center;
+	}
+	.card[for ='c3']{
+		background-image: url(../fotos/IMG-Trabajos-Espirituales/Responsive/3Oracion.png);
+		background-size: cover;
+		background-position: center;
+	}
+	.card[for ='c4']{
+		background-image: url(../fotos/IMG-Trabajos-Espirituales/Responsive/4Visitas.png);
+		background-size: cover;
+		background-position: center;
+	}
+	.card[for ='c5']{
+		background-image: url(../fotos/IMG-Trabajos-Espirituales/Responsive/5Predicas.png);
+		background-size: cover;
+		background-position: center;
+	}
+	.card[for ='c6']{
+		background-image: url(../fotos/IMG-Trabajos-Espirituales/Responsive/6Estudios.png);
+		background-size: cover;
+		background-position: center;
+	}
+/* A Y U N O   V I G I L I A S   O R A C I O N   V I S I T A S   P R E D I C A S   E S T U D I O S  -  F I N A L */
+
+/* I N F O R M A C I O N   D E L   P A S T O R  - I N I C I O */
+	.articulos1{
+		flex-direction: column;
+		background: transparent;
+		width: 90vw;
+		height: 110vh;
+		margin-top: 1.5vh;
+		margin-bottom: 4vh;
+
+	}
+	.articulos1 .imagenPastor{
+		width: 97%;
+		height: 40%;
+		box-shadow: 5px 5px 20px black;
+	}
+	.articulos1 .infoPastor{
+		background-color: rgba(0, 0, 0, .5);
+		width: 93%;
+		height: 55%;
+		text-align: justify;
+		padding: 2% 4% 2% 4%;
+		overflow: hidden;
+		box-shadow: 10px 10px 20px black;
+		border-radius: 2.5vw;
+	}
+	.articulos1 .infoPastor h2{
+		margin-top: 2vh;
+		margin-left: 2%;
+		font-size: 3.6em;
+	}
+	.articulos1 .infoPastor b{
+		margin-left: 2%;
+	}
+	.articulos1 .infoPastor small{
+		font-size: 3.7em;
+		margin-top: 2vh;
+		margin-bottom: -0.7vh;
+		margin-left: 2%;
+	}
+	.articulos1 .infoPastor p{
+		margin-top: 1.5vh;
+		border-radius: 0;
+		padding: 2.5%;
+		font-size: 2.5vh;
+		background: rgba(0, 0, 0, 0);
+		backdrop-filter: blur(0px);
+	}
+/* I N F O R M A C I O N   D E L   P A S T O R  - F I N A L */
+
+
+/*	A N I M A C I O N   D E   L A S   F O T O G R A F I A S   C A R R U S E L   -   I N I C I O */
+	.dimension-principal{
+		display: none;
+	}
+	.slider{
+		/*border: 5px solid red;
+		background-color: pink;*/
+		display: block;
+		position: relative; /* Para que todos los elementos [div, img, button dots] se acoplen al div padre que es .slider */
+		width: 95vw; 	/* La anchura del elemento .slider */
+		height: 45vh;   /* La altura del elemento .slider */
+		/*margin: auto;  Para que el elemento div-slider se posicine al centro */
+		overflow: hidden;  /*Para que las imagenes y los demas elementos no se desborden y se salgan del elemento padre */
+		box-shadow: 5px 5px 20px black;
+		border-radius: 2.5vw;
+		margin-bottom: 0vh;
+	}
+	.list{
+		/*border: 5px solid blue;
+		background-color: skyblue;*/
+		position: absolute;  /*Se acopla al elemento padre y actua en torno a ello es que sin este position: absolute no puede rotar las imagenes */
+		display: flex;  /* Las imagenes se ponen en una sola fila ejm. ******  */
+		align-items: center;   /*Las imagenes se posicionan al centro en torno a la altura */
+		width: 100%;    /*La anchura del elemento .list */
+		height: 100%;  /* La altura del elemento .list */
+		left: 0; /* Para que la primera imagen se deslize lentamente */
+		width: max-content;
+		transition: 1s;
+	}
+	.slider .list .item{
+		/*border: 5px solid darkviolet;
+		background-color: skyblue;*/
+		width: 100vw;
+	}
+	.list img{
+		/*border: 5px solid green;
+		background-color: greenyellow;*/
+		max-width: 100%;
+		width: 100%;  /* La anchura de las imagenes para que se acople al elemento padre [.slider] exacto! */
+		height: 100%;  /* La altura de las imagenes */
+		object-fit: cover; /* Para que las imagenes no pierdan su tamano original */
+	}
+	.buttons{
+		/*border: 5px solid purple;
+		background-color: plum;*/
+		position: absolute;
+		top: 43%;
+		left: 1.7%;
+		width: 96%;
+		height: 120px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.buttons button{
+		/*border: 5px solid black;
+		background-color: gray;*/
+		background-color: #eee4;
+		color: #fff;
+		width: 15%;
+/*		height: 100%;*/
+		border-radius: 50%;
+		border: none;
+		font-family: monospace;
+		font-size: 4em;
+		transition: 1s;
+	}
+	.buttons button:hover{
+		background-color: #eee;
+		color: #555;
+		box-shadow: 2px 2px 3px black;
+	}
+	.dots{
+		/*border: 5px solid maroon;
+		background-color: maroon;*/
+		position: absolute;
+		display: flex;
+		bottom: 7%;
+		width: 90%;
+		height: 40px;
+		justify-content: center;
+		margin: 0 0 0 9%;
+	}
+	.dots li{
+		/*border: 5px solid aqua;
+		background-color: aquamarine;*/
+		background-color: #eee4;
+		border: 0.5vh solid #eee4;
+		list-style: none;   /* Eliminamos las balas de la etiqueta <li> */
+		width: 2%;    /* Damos tamano a los puntos junto con height */
+		height: 10px;     /* Damos tamano a los puntos junto con width */
+		margin: 0 8% 0 0;
+		border-radius: 50px;
+		transition: 1s;
+	}
+	.dots li.active{
+		width: 12%;
+	}
+/*	A N I M A C I O N   D E   L A S   F O T O G R A F I A S   C A R R U S E L   -   F I N A L */
+}

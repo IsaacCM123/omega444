@@ -1,0 +1,664 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>I.E.P. 1° De Mayo</title>	<!-- Titulo en la pestana del navegador -->
+		<link rel="shortcut icon" href="../iconos/icono.gif">	<!-- Icono en la pestana del navegador -->
+		<link rel="stylesheet" href="../estilos/1_Encabezamiento.css"> <!-- Hoja de estilo del encabezamiento -->
+		<link rel="stylesheet" href="../estilos/2_PieDePagina.css">
+		<link rel="stylesheet" href="../estilos/5_Obreros.css">
+		<link rel="stylesheet" href="../estilos/13_ContenidoDeObreros.css">
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Allura&family=Satisfy&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- E N C A B E Z A M I E N T O - I N I C I O -->
+		<header>
+			<img src="../logos/logo.gif">	<!-- Logo de la empresa -->
+			<input type="checkbox" id="Deslizable">	<!--Menu deslizable para celular -->
+			<label id="amburguesa" onclick="cambiar()" for="Deslizable">&#8801;</label>
+				<nav>
+					<a href="../principal.html">INICIO</a>
+					<a href="5_Obreros.html">OBREROS</a>
+					<a href="8_Trabajos.html">TRABAJOS</a>
+					<a href="11_Predicas.html">PREDICAS</a>
+					<a href="6_Canticos.html">CANTICOS</a>
+					<a href="3_Ofrendas.html">OFRENDAS</a>
+				</nav>
+		</header>
+		<!-- E N C A B E Z A M I E N T O - F I N A L -->
+
+
+
+		<!-- F O T O S   D E   O B R E R O S   -   I N I C I O -->
+		<center>
+				<div class="carousel">
+						<div class="list">
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/1.jpg">
+										<div class="content">
+											<div class="author">PASTOR PREVÍTERO</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Y os daré pastores según mi corazón, que os
+												apacienten con ciencia y con inteligencia.
+												<small>Jeremías Cap.3 Ver.15</small>
+											</div>
+											<div class="buttons">
+												<button onclick="pastor1()"><a href="#verMas1">VER MAS</a></button>
+												<button id="contactanos1">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/2.jpg">
+										<div class="content">
+											<div class="author">CUERPO DE NIÑOS - NIÑAS</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Viendolo Jesús, se indigno, y les dijo:
+												Dejad a los niños venir a mi, y no se lo
+												impidáis; Por que de los tales es el reino
+												de Dios 
+												<small>San Marcos Cap.10 Ver.14</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoNinos2()"><a href="#verMas2">VER MAS</a></button>
+												<button id="contactanos2">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/3.jpg">
+										<div class="content">
+											<div class="author">CUERPO INTERMEDIO</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Y tomando la mano de la niña, le dijo:
+												Talita cumi; que traducido es: Niña, a
+												ti te digo, levántate.
+												<small>San Marcos Cap.5 Ver.41</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoIntermedio3()"><a href="#verMas3">VER MAS</a></button>
+												<button id="contactanos3">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/4.jpg">
+										<div class="content">
+											<div class="author">CUERPO DE SEÑORITAS</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Alégrate joven en tu juventud, y tome placer
+												tu corazón en los dias de tu adolescencia.
+												<small>  Eclesiastés Cap.11 Ver.9</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoSenoritas()"><a href="#verMas4">VER MAS</a></button>
+												<button id="contactanos4">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/5.jpg">
+										<div class="content">
+											<div class="author">CUERPO DE JÓVENES</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Jóvenes, porque sois fuertes, y la palabra de Dios
+												permanece en vosotros, y habéis vencido al maligno.
+												<small>1° De Juan Cap.2 Ver.14</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoJovenes()"><a href="#verMas5">VER MAS</a></button>
+												<button id="contactanos5">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/6.jpg">
+										<div class="content">
+											<div class="author">CUERPO DE DORCAS</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Había entonces en Jope una discípula
+												llamada Tabita, que traducido quiere
+												decir, Dorcas. Esta abundaba en buenas
+												obras y en limosnas que hacia.
+												<small>Hechos Cap.9 Ver.36</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoDorcas()"><a href="#verMas6">VER MAS</a></button>
+												<button id="contactanos6">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/7.jpg">
+										<div class="content">
+											<div class="author">CUERPO DE VOLUNTARIOS</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Bienaventurado el hombre que teme a jehová,
+												y en sus mandamientos se deleita en gran manera.
+												Su descendencia será poderosa en la tierra; La
+												generación de los rectos será bendita.
+												<small>Salmos Cap.112 Ver.1-2</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoVoluntarios()"><a href="#verMas7">VER MAS</a></button>
+												<button id="contactanos7">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/8.jpg">
+										<div class="content">
+											<div class="author">CUERPO TERCERA EDAD</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Las ancianas asimismo sean reverentes
+												en su porte; No calumniadoras , no esclavas
+												del vino, maestras del bien.
+												<small>Tito Cap.2 Ver.3</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoTerceraEdad()"><a href="#verMas8">VER MAS</a></button>
+												<button id="contactanos8">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/9.jpg">
+										<div class="content">
+											<div class="author">CUERPO DE OFICIALES</div>
+											<div class="title">1° DE MAYO</div>
+											<div class="topic">I.E.P.</div>
+											<div class="des">
+												Esforzaos y cobrad ánimo; No temáis, ni tengáis
+												miedo de ellos, por que Jehová tu Dios es el que
+												va contigo, no te dejará, ni te desamparará.
+												<small>Deuteronomio Cap.31 Ver.6</small>
+											</div>
+											<div class="buttons">
+												<button onclick="cuerpoOficiales()"><a href="#verMas9">VER MAS</a></button>
+												<button id="contactanos9">ESCRÍBENOS</button>
+											</div>
+										</div>
+									</div>
+						</div>
+
+
+								<div class="thumbnail">
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/1.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/2.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/3.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/4.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/5.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/6.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/7.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/8.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="../fotos/IMG-Obreros-Cuerpos/9.jpg">
+										<div class="content">
+											<div class="title">
+												Obreros
+											</div>
+											<div class="desc">
+												I.E.P 1ro de mayo
+											</div>
+										</div>
+									</div>
+							
+								</div>
+
+						<div class="arrows">
+							<button id="prev"><</button>
+							<button id="next">></button>
+						</div>
+						<div class="time"></div>
+				</div>
+			</center>
+			<!-- F O T O S   D E   O B R E R O S   -   F I N A L -->
+
+
+
+				<!--  I N F O R M A C I O N   D E   O B R E R O S   -   I N I C I O -->
+				<center>
+					<div class="envoltura">
+						<div class="invitacion">
+							<h2>QUERIDO AMIGO!!</h2>
+							<div class="texto">
+								<h3>SABIAS QUE DIOS TIENE UN PLAN PARA TÍ?..
+									LAS PUERTAS DEL CIELO ESTAN ABIERTAS
+									PARA TÍ Y PARA TODA TU FAMILIA!!!</h3>
+								<small>Jeremías Cap.33 Ver.8-9</small>
+								<p>Y los limpiaré de toda su maldad con que pecaron contra mí;
+									Y perdonaré todos sus pecados con que contra mí pecaron,
+									y con que contra mi se revelaron.
+									Y me será a mí por nombre de gozo, de alabanza y de gloria,
+									entre todas las naciones de la tierra, que habrán oido todo
+									el bien que yo les hago; Y temerán y temblarán de todo el bien
+									y de toda la paz que yo les haré.</p>
+							</div>
+						</div>
+						<div class="imgObreros"><img src="../fotos/IMG-Obreros-Cuerpos/10.jpg"></div>
+					</div>
+				</center>
+				<!--  I N F O R M A C I O N   D E   O B R E R O S   -   F I N A L -->
+
+
+
+				<!-- C A R T A S   3 D   D E   O F I C I A L E S   I N F O R M A C I O N   -   I N I C I O -->
+				<center>
+					<div class="contenedor">
+						<div class="caja">
+							<div class="carta" id="carta1">
+								<div class="frontal"><img src="../fotos/IMG-Oficiales/1.jpg"></div>
+								<div class="trasero">
+									<h1>Hno. Oficial:<br>Samuel Velazco</h1>
+									<p>informacion adicional en la reversa de la carta</p>
+								</div> 
+							</div>
+						</div>
+
+						<div class="caja">
+							<div class="carta" id="carta2">
+								<div class="frontal"><img src="../fotos/IMG-Oficiales/2.jpg"></div>
+								<div class="trasero">
+									<h1>Hno. Oficial:<br>Samuel Mamani</h1>
+									<p>informacion adicional en la reversa de la carta</p>
+								</div> 
+							</div>
+						</div>
+
+						<div class="caja">
+							<div class="carta" id="carta3">
+								<div class="frontal"><img src="../fotos/IMG-Oficiales/3.jpg"></div>
+								<div class="trasero">
+									<h1>Hno. Oficial:<br>Rene Orellana</h1>
+									<p>informacion adicional en la reversa de la carta</p>
+								</div> 
+							</div>
+						</div>
+
+						<div class="caja">
+							<div class="carta" id="carta4">
+								<div class="frontal"><img src="../fotos/IMG-Oficiales/4.jpg"></div>
+								<div class="trasero">
+									<h1>Hno. Oficial:<br>Efrain Coria</h1>
+									<p>informacion adicional en la reversa de la carta</p>
+								</div> 
+							</div>
+						</div>
+
+						<div class="caja">
+							<div class="carta" id="carta5">
+								<div class="frontal"><img src="../fotos/IMG-Oficiales/5.jpg"></div>
+								<div class="trasero">
+									<h1>Hno. Oficial:<br>Joel Cruz</h1>
+									<p>informacion adicional en la reversa de la carta</p>
+								</div> 
+							</div>
+						</div>
+
+						<div class="caja">
+							<div class="carta" id="carta6">
+								<div class="frontal"><img src="../fotos/IMG-Oficiales/6.jpg"></div>
+								<div class="trasero">
+									<h1>Hno. Oficial:<br>Wilder Condori</h1>
+									<p>informacion adicional en la reversa de la carta</p>
+								</div> 
+							</div>
+						</div>	
+					</div>
+				</center>
+				<!-- C A R T A S   3 D   D E   O F I C I A L E S   I N F O R M A C I O N   -   F I N A L -->
+
+
+
+				<!-- A N I M A C I O N   V E R T I C A L   D E   I M A G E N E S   D E S L I Z A N T E S   -   I N I C I O -->
+				<center>
+					<div class="pantallaCompletaDeslizador">
+						<div class="controlesArribaAbajo">
+							<div class="flechaArriba"><ion-icon name='chevron-up-outline'></ion-icon></div>
+							<div class="flechaAbajo"><ion-icon name='chevron-down-outline'></ion-icon></div>
+						</div>
+						<div class="envoltorioAll">
+							<div class="ladoIzquierdo" id="L-I">
+								<div style="background-color: #f1683a;" id="verMas1">
+									<h2>PASTOR PRESVÍTERO</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #555;" id="verMas2">
+									<h2>CUERPO DE NIÑOS - NIÑAS</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #0a6c86;" id="verMas3">
+									<h2>CUERPO INTERMEDIO</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #f1683a;" id="verMas4">
+									<h2>CUERPO DE SEÑORITAS</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #555;" id="verMas5">
+									<h2>CUERPO DE JÓVENES</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #0a6c86;" id="verMas6">
+									<h2>CUERPO DE DORCAS</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #f1683a;" id="verMas7">
+									<h2>CUERPO DE VOLUNTARIOS</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #555;" id="verMas8">
+									<h2>CUERPO TERCERA EDAD</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+								<div style="background-color: #0a6c86;" id="verMas9">
+									<h2>CUERPO DE OFICIALES</h2>
+									<div class="pasajeBiblico">Lorem ipsum dolor sit amet, consectetur.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.1
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim esto es parrafo.</p>
+								</div>
+							</div>
+							<div class="ladoDerecho" id="L-D">
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/9.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/8.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/7.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/6.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/5.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/4.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/3.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/2.jpg"></div>
+								<div><img src="../fotos/IMG-Obreros-Cuerpos/1.jpg"></div>
+							</div>
+						</div>
+						<button id="btn-informacion">IMÁGENES</button>
+					</div>
+				</center>
+				<!-- A N I M A C I O N   V E R T I C A L   D E   I M A G E N E S   D E S L I Z A N T E S   -   F I N A L -->
+
+
+		<!-- S C R E E N   F L A S H    -   I N I C I O -->
+		<div class="popup-screen">
+			<div class="popup-box">
+				<ion-icon class="close-btn" name="close-outline"></ion-icon>
+				<h2>ESCRÍBENOS</h2>
+				<form action="mailto:iep1rodemayo@gmail.com" method="post" enctype="text/plain">
+					<input type="text" class="txtNombre" name="Nombre" maxlength="25" placeholder="Nombre"><br>
+					<textarea name="Comentario" cols="30" rows="4" placeholder="Escríbenos..."></textarea><br>
+					<input class="envio" type="submit" value="ENVIAR">
+					<input class="borrado" type="reset" value="BORRAR">
+				</form>
+			</div>
+		</div>
+		<!-- S C R E E N   F L A S H    -   F I N A L -->
+
+
+
+
+
+		<!-- P I E  D E  P A G I N A - I N I C I O -->
+		<footer>
+			<div class="container_1">
+				<div class="informacion">
+					<h3>SOBRE NOSOTROS</h3><hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.Mi nombre  ICM.</p>
+				</div>
+				<div class="redesSociales">
+					<h3>REDES SOCIALES</h3><hr>
+					<!-- Pagina Facebook -->
+					<a href="https://www.facebook.com/groups/446586037748392">
+						<ion-icon class="fac" name="logo-facebook"></ion-icon>Facebook
+					</a>
+					<a href="https://x.com/IEP_1ro_de_Mayo?t=tYf5MN01XgdzLakfRv6J8g&s=08">
+						<ion-icon class="twi" name="logo-xing"></ion-icon>TwiX
+					</a>
+					<!-- Pagina Youtube -->
+					<a href="https://www.youtube.com/@IEP-1ro-De-Mayo">
+						<ion-icon class="you" name="logo-youtube"></ion-icon>Youtube
+					</a>
+				</div>
+				<div class="contactos">
+					<h3>CONTACTOS</h3><hr>
+					<!-- Pagina Whatsapp -->
+					<a href="https://wa.me/59177994047">
+						<ion-icon class="wha" name="logo-whatsapp"></ion-icon>Whatssap
+					</a>
+					<!-- Pagina Gmail -->
+					<a href="mailto:iep1rodemayo@gmail.com">
+						<ion-icon class="gma" name="mail-outline"></ion-icon>Gmail
+					</a>
+					<!-- Pagina Locacion -->
+					<a href="https://maps.app.goo.gl/bohw1DnCfFGShxuw8">
+						<ion-icon class="ubi" name="location-outline"></ion-icon>Ubicacion
+					</a>
+				</div>
+			</div>
+			<div class="container_2">
+				<div>
+					<small>&copy; 2024 <b>I.E.P.</b> - Todos los Derechos Reservados.</small>
+				</div>
+			</div>	
+		</footer>
+		<!-- P I E   D E   P A G I N A - F I N A L -->
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="../script/1_Obreros.js"></script>
+		<script src="../script/3_Amburguesa.js"></script>
+		<script src="../script/13_ContenidoObrerosJS.js"></script>
+	</body>
+</html>

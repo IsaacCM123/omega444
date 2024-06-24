@@ -1,0 +1,112 @@
+body{
+	background-color: #1683a0;
+	/*background-image: url(../fondos/fondo.jpg);
+	background-size: cover;
+	background-position: center;*/
+	margin-top: 5.7%;	/* Para que tenga un margen vacio arriba de la ventana, por que ocupa el HEADER */
+	height: 350vh; /* Esto es temporal */
+}
+/* ::::::::::::: Menu principal ::::::::::::: */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+header img{
+/*	border: 5px solid purple;
+	background: plum;*/
+	width: 5%;	/* Aplicamos el porcentage por motivos de efecto zoom. No pierde el tamano. */
+	height: 5%;	/* Aplicamos el porcentage por motivos de efecto zoom. No pierde el tamano. */
+	margin: 5px 0px 5px 20px;
+}
+header{
+	/*border: 5px solid red;
+	background: pink;*/
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;			/* Para que todos los elementos se alinien horizontalmente */
+	position: fixed;		/* Para que se mantenga fijo en la parte de arriba de la ventana, Para cuando deslizemos hacia abajo el menu este fijo. */
+	width: 100%;
+	align-items: center;	/* Para que todos los elementos se centreen en base a la altura */
+	justify-content: space-between;/* Para que todos los elementos se ordenen de forma equitativa */
+	top: 0;	/* Para que no se vaya abajo, cuando le damos un [margin-top: 80px;] */
+	z-index: 1000; /* Para que siempre este por delante de todos los elementos. asi tambien los que tengan z-index: 1 por eso 1000*/
+}
+header nav{
+	/*border: 5px solid black;
+	background: gray;*/
+	display: flex;
+	width: 85%;		/* Apicamos el porcentage para que no pierda su proporsion de ancho a la pantalla */
+	height: 7vh;	/* Apicamos el views height para que no pierda su proporsion de altura a la pantalla */
+	align-items: center;
+	justify-content: space-around;/* Para que todos los elementos se ordenen de forma equitativa conciderando los costados */
+}
+header nav a{
+/*	border: 5px solid yellow;
+	background: lightyellow;*/
+	text-decoration: none;
+	color: #fff;
+	transition: .7s;
+	font-size: 1.1vw;	/* Para que el texto no pierda el tamano original cuando hagamos LUPA al 25% ó hasta el 500%. */
+}
+header nav a:hover{
+	color: #d5d5d5;
+}
+header input{
+/*	border: 5px solid green;
+	background: greenyellow;*/
+	display: none;
+}
+label{
+/*	border: 5px solid blue;
+	background: skyblue;*/
+	display: none;
+}
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	body{
+		margin-top: 31%;
+	}
+	header img{
+		/*border: 5px solid red;
+		background: pink;*/
+		width: 25%; 	/* Aplicamos el porcentage para no que no se desproporcione su tamano */
+		height: 25%;	/* Aplicamos el porcentage para no que no se desproporcione su tamano */
+		margin: 3% 3% 3% 3%;
+	}
+	header{
+		/*border: 5px solid blue;
+		background: skyblue;*/
+		padding: 0 0 0 0;
+		width: 100%;
+	}
+	label{			/* Es simplemente estilo de la amburguesa menu */
+		/*border: 5px solid green;
+		background: greenyellow;*/
+		display: block;
+		font-size: 13em;
+		color: #fff;
+		margin-right: 6%;
+		font-family: Candara Light;
+	}
+	#Deslizable:checked ~ nav{
+		right:-0%; /* Mientra mas asciende el porcentage mas se desliza hacia la isquierda */
+	}
+	header nav{
+		display: block;
+		top: 17.32%;
+		width: 100%;
+		position: fixed;
+		transition: all .9s;
+		right: -102%;	/* Esconde hacia la parte derecha el menu, cuando llegue al -100% lo olcultara totalmente  */
+	}
+	header nav a{
+		display: block;
+		background-color: rgba(0, 0, 0, .5);
+		font-size: 3em;
+		text-align: center;
+		padding: 1.5em;
+		margin-bottom: 1px;
+	}
+}

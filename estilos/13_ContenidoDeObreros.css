@@ -1,0 +1,335 @@
+/* I N F O R M A C I O N   D E   O B R E R O S   -   I N I C I O */
+.envoltura{
+/*	background-color: darkred;*/
+	width: 97vw;
+	height: 50vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.envoltura .invitacion{
+	background-color: rgba(0, 0, 0, .5);
+	width: 60%;
+	height: 97%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.7vw;
+	box-shadow: 3px 3px 10px black;
+}
+.envoltura .invitacion .texto{
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+	width: 85%;
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+/*	text-align: justify;*/
+	border-radius: 1.7vw;
+	box-shadow: 3px 3px 10px black;
+	padding: 3.5vh 4vh 3.5vh 4vh;
+	text-align: left;
+}
+.envoltura .invitacion h2{ font-size:5vh; color: #fff; margin-bottom:1vh; margin-top: -2vh; text-shadow: 1px 1px 1px black; }
+.envoltura .invitacion h3{ font-size:3vh; color: #fff; margin-bottom:2vh; text-shadow: 1px 1px 1px black; }
+.envoltura .invitacion small{ font-size: 3.3vh; font-family: "Allura", cursiva; display: block; color: #fff; margin: 3vh 0vh 0vh 0vh; text-shadow: 2px 2px 3px black; }
+.envoltura .invitacion p{ font-size: 2.6vh; padding: 0; margin: 0; text-align:justify; text-shadow: 1px 1px 1px black; }
+.envoltura .imgObreros{
+/*	background-color: darkviolet;*/
+	width: 32%;
+	height: 97%;
+}
+.envoltura .imgObreros img{
+	width: 100%;
+	height: 100%;
+	border-radius: 1.7vw;
+	box-shadow: 10px 10px 20px black;
+}
+/* I N F O R M A C I O N   D E   O B R E R O S   -   F I N A L */
+
+/* C A R T A S   3 D   D E   O F I C I A L E S   I N F O R M A C I O N   -   I N I C I O */
+.contenedor{
+	width: 90vw;
+	height: 45vh;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 5vh;
+}
+.caja{
+	position: relative;
+	width: 15%;
+	height: 100%;
+	perspective: 800px;
+}
+.carta{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: transform 1500ms;
+	transform-style: preserve-3d;
+}
+#carta1:hover{
+	transform: rotateY(180deg) rotateZ(180deg);
+}
+#carta2:hover{
+	transform: rotateY(180deg) rotateZ(180deg);
+}
+#carta3:hover{
+	transform: rotateY(180deg) rotateZ(180deg);
+}
+#carta4:hover{
+	transform: rotateY(180deg) rotateZ(180deg);
+}
+#carta5:hover{
+	transform: rotateY(180deg) rotateZ(180deg);
+}
+#carta6:hover{
+	transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.frontal, .trasero{
+	position: absolute ;
+	width: 100%;
+	height: 100%;
+	border-radius: 1.7vw;
+	box-shadow: 10px 10px 20px black;
+	backface-visibility: hidden;
+}
+.frontal img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1.7vw;
+}
+.trasero{
+	background-color: #3a3a3a;
+	transform: rotateY(180deg) rotateZ(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2vh;
+}
+.caja .carta .trasero h1{
+	font-size: 3vh;
+	color: #eee;
+}
+.caja .carta .trasero p{
+	font-size: 2.3vh;
+	color: #eee;
+}
+/* C A R T A S   3 D   D E   O F I C I A L E S   I N F O R M A C I O N   -   F I N A L */
+
+/* P A N T A L L A   D E S L I Z A D O R   C O N T E N I D O   O B R E R O  -  I N I C I O */
+.pantallaCompletaDeslizador{
+	position: relative;
+	width: 98.7vw;
+	height: 100vh;
+}
+.pantallaCompletaDeslizador .controlesArribaAbajo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 8%;
+	height: 16%;
+}
+.pantallaCompletaDeslizador .controlesArribaAbajo > div{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pantallaCompletaDeslizador .controlesArribaAbajo div ion-icon{
+	font-size: 4vh;
+}
+.pantallaCompletaDeslizador .controlesArribaAbajo > .flechaArriba{
+	top: 0%;
+	right: 0%;
+	background: #fff;
+	color: #111;
+}
+.pantallaCompletaDeslizador .controlesArribaAbajo > .flechaAbajo{
+	bottom: 0%;
+	left: 0%;
+	background: #111;
+	color: #fff;
+}
+.pantallaCompletaDeslizador .envoltorioAll{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo,
+.pantallaCompletaDeslizador .envoltorioAll .ladoDerecho{
+	width: 50%;
+	overflow: hidden;
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div,
+.pantallaCompletaDeslizador .envoltorioAll .ladoDerecho > div{
+	width: 100%;
+	height: 100%;
+	transition: all 500ms ease-in-out;
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div .pasajeBiblico{
+	font-size: 2.5vh;
+	width: 85%;
+	margin-left: 5%;
+	text-align: justify;
+	margin-bottom: 2.5%;
+	color: #fff;
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div h2{
+	width: 85%;
+	display: flex;
+	font-size: 5vh;
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+	color: #fff;
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div p{
+	width: 85%;
+	color: #fff;
+	font-size: 2.6vh;
+	text-align: justify;
+	margin-left: 5%;
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoDerecho > div img{
+	width: 100%;
+	height: 100%;
+/*	object-fit: cover;*/
+}
+.pantallaCompletaDeslizador .envoltorioAll .ladoDerecho div:nth-child(1){
+	margin-top: -800vh;
+}
+.pantallaCompletaDeslizador #btn-informacion{
+	display: none;
+}
+/* P A N T A L L A   D E S L I Z A D O R   C O N T E N I D O   O B R E R O  -  F I N A L */
+
+
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+/* I N F O R M A C I O N   D E   O B R E R O S   -   I N I C I O */
+	.envoltura{
+		margin-top: 4em;
+		margin-bottom: 4em;
+		width: 100vw;
+		height: 140vh;
+		flex-direction: column;
+	}
+	.envoltura .invitacion{
+		width: 95%;
+		height: 55%;
+	}
+	.envoltura .imgObreros{
+		width: 94%;
+		height: 40%;
+	}
+	.envoltura .invitacion .texto{
+		width: 78%;
+		height: 80%;
+		padding: 0vh 3vh 0vh 3vh;
+	}
+	.envoltura .invitacion h2{ font-size:4vh; margin-bottom:2vh; margin-top: 0vh; }
+	.envoltura .invitacion h3{ font-size:2.43vh; text-align: justify; margin-bottom:4vh; margin-top: 4vh;}
+	.envoltura .invitacion small{ font-size: 3.5vh; margin: 3vh 0vh 1vh 0vh; }
+/* I N F O R M A C I O N   D E   O B R E R O S   -   F I N A L */
+
+
+/* C A R T A S   3 D   D E   O F I C I A L E S   I N F O R M A C I O N   -   I N I C I O */
+	.contenedor{
+		flex-direction: column;
+		width: 80vw;
+		height: 400vh;
+	}
+	.caja{
+		position: relative;
+		width: 100%;
+		height: 15.5%;
+	}
+	.trasero{
+		gap: 4vh;
+	}
+	.caja .carta .trasero h1{
+		font-size: 4.5em;
+	}
+	.caja .carta .trasero p{
+		font-size: 3em;
+		margin: 0% 12% 0% 12%;
+		text-align: left;
+	}
+/* C A R T A S   3 D   D E   O F I C I A L E S   I N F O R M A C I O N   -   F I N A L */
+
+
+/* A N I M A C I O N   V E R T I C A L   D E   I M A G E N E S   D E S L I Z A N T E S   -   I N I C I O */
+	.pantallaCompletaDeslizador{
+		width: 95vw;
+		height: 100vh;
+		margin-bottom: 4vh;
+	}
+	/* _______________ F L E C H A S   A R R I B A  -  A B A J O _______________ */
+	.pantallaCompletaDeslizador .controlesArribaAbajo{
+		width: 31%;
+		height: 16%;
+		left: 81%;
+	}
+	.pantallaCompletaDeslizador .controlesArribaAbajo > .flechaAbajo{
+		left: 50%;
+	}
+	/* _______________ L A D O   I Z Q U I E R D O _______________ */
+	.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo{
+		box-shadow: 5px 5px 20px black;
+		border-radius: 2.5vw;
+		width: 100%;
+	}
+	.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div h2{
+		margin-left: 6%;
+		font-size: 3.6em;
+		width: 90%;
+	}
+	.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div .pasajeBiblico{
+		font-size: 2.6em;
+		width: 70%;
+		margin-left: 6%;
+	}
+	.pantallaCompletaDeslizador .envoltorioAll .ladoIzquierdo > div p{
+		margin-left: 6%;
+		font-size: 2.6em;
+		width: 70%;
+	}
+	/* _______________ L A D O   D E R E C H O _______________ */
+	.pantallaCompletaDeslizador .envoltorioAll .ladoDerecho{
+		width: 0%;
+	}
+	.pantallaCompletaDeslizador #btn-informacion{
+		display: flex;
+		position: absolute;
+		background-color: #555;
+		color: #eee;
+		font-size: 2.5em;
+		padding: 3% 5%;
+		bottom: 3%;
+		right: 5%;
+		border: none;
+		transition: .7s;
+		border-radius: 1.5vw;
+	}
+	.pantallaCompletaDeslizador #btn-informacion:hover{
+		background-color: transparent;
+		border: 1px solid #fff;
+	}
+/* A N I M A C I O N   V E R T I C A L   D E   I M A G E N E S   D E S L I Z A N T E S   -   F I N A L */
+}

@@ -1,0 +1,345 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>I.E.P. 1° De Mayo</title>	<!-- Titulo en la pestana del navegador -->
+		<link rel="shortcut icon" href="../iconos/icono.gif">	<!-- Icono en la pestana del navegador -->
+		<link rel="stylesheet" href="../estilos/1_Encabezamiento.css"> <!-- Hoja de estilo del encabezamiento -->
+		<link rel="stylesheet" href="../estilos/2_PieDePagina.css">
+		<link rel="stylesheet" href="../estilos/11_Predicas.css">
+		<link rel="stylesheet" href="../estilos/19_predicasTestimoniosEnAudio.css">
+		<link rel="stylesheet" href="../estilos/20_predicasDiosLlamasDeFuego.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Allura&family=Satisfy&display=swap" rel="stylesheet">
+
+		<!-- I M P O R T A M O S   L A   A P I   P A R A   R E P R O D U C I R   A U D I O   C O N   M E D I A - E L E M E N T -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+
+	</head>
+	<body>
+		<!-- E N C A B E Z A M I E N T O - I N I C I O -->
+		<header>
+			<img src="../logos/logo.gif">	<!-- Logo de la empresa -->
+			<input type="checkbox" id="Deslizable">	<!--Menu deslizable para celular -->
+			<label id="amburguesa" onclick="cambiar()" for="Deslizable">&#8801;</label>
+				<nav>
+					<a href="../principal.html">INICIO</a>
+					<a href="5_Obreros.html">OBREROS</a>
+					<a href="8_Trabajos.html">TRABAJOS</a>
+					<a href="11_Predicas.html">PREDICAS</a>
+					<a href="6_Canticos.html">CANTICOS</a>
+					<a href="3_Ofrendas.html">OFRENDAS</a>
+				</nav>
+		</header>
+		<!-- E N C A B E Z A M I E N T O - F I N A L -->
+
+		<!-- P R E D I C A S   -   I N I C I O -->
+		<center>
+			<div class="barraHorizontalMENU">
+				<button id="abrirContenido1-ID" class="enlaceAlContenido" onclick="abrirContenido(event, 'Hno1')"><img src="../fotos/Hnos/1.jpg"></button>
+				<button id="abrirContenido2-ID" class="enlaceAlContenido" onclick="abrirContenido(event, 'Hno2')"><img src="../fotos/Hnos/2.jpg"></button>
+				<button id="abrirContenido3-ID" class="enlaceAlContenido" onclick="abrirContenido(event, 'Hno3')"><img src="../fotos/Hnos/3.jpg"></button>
+			</div>
+
+			<!-- P R I M E R   T E S T I M O N I O -->
+			<div id="Hno1" class="contenido">
+				<h3>Testimonio de Sanidad</h3>
+				<div class="detalles">
+					<div class="expedientes">
+						<h5>Nombre Completo:</h5>
+						<p>Hno. Elias Rodriguez Rocha</p>
+						<h5>Congregacion:</h5>
+						<p>Iglesia Evangélica Pentecostal</p>
+						<p>1° De Mayo</p>
+						<h5>Cuerpo:</h5>
+						<p>Voluntario</p>
+						<h5>Ocupacion:</h5>
+						<p>Soldador</p>
+						<h5>Radicatoria:</h5>
+						<p>Cbba - Bolivia</p>	
+					</div>
+					<div class="imagen">
+						<img src="../fotos/Hnos/1.jpg">
+					</div>
+				</div>
+				<br><p class="miTestimonioParrafo">Testimonio 1, Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum ICM.
+				Testimonio 1, Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum ICM.</p>
+			</div>
+			
+			<!-- S E G U N D O   T E S T I M O N I O -->
+			<div id="Hno2" class="contenido">
+				<h3>Testimonio de Salvacion</h3>
+				<div class="detalles">
+					<div class="expedientes">
+						<h5>Nombre Completo:</h5>
+						<p>Hno. Elias Rodriguez Rocha</p>
+						<h5>Congregacion:</h5>
+						<p>Iglesia Evangélica Pentecostal</p>
+						<p>1° De Mayo</p>
+						<h5>Cuerpo:</h5>
+						<p>Voluntario</p>
+						<h5>Ocupacion:</h5>
+						<p>Soldador</p>
+						<h5>Radicatoria:</h5>
+						<p>Cbba - Bolivia</p>	
+					</div>
+					<div class="imagen">
+						<img src="../fotos/Hnos/2.jpg">
+					</div>
+				</div>
+				<br><p class="miTestimonioParrafo">Testimonio 2, Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum ICM.
+				Testimonio 1, Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum ICM.</p>
+			</div>
+
+			<!-- T E R C E R   T E S T I M O N I O -->
+			<div id="Hno3" class="contenido">
+				<h3>Testimonio de Amonestacion</h3>
+				<div class="detalles">
+					<div class="expedientes">
+						<h5>Nombre Completo:</h5>
+						<p>Hno. Elias Rodriguez Rocha</p>
+						<h5>Congregacion:</h5>
+						<p>Iglesia Evangélica Pentecostal</p>
+						<p>1° De Mayo</p>
+						<h5>Cuerpo:</h5>
+						<p>Voluntario</p>
+						<h5>Ocupacion:</h5>
+						<p>Soldador</p>
+						<h5>Radicatoria:</h5>
+						<p>Cbba - Bolivia</p>	
+					</div>
+					<div class="imagen">
+						<img src="../fotos/Hnos/3.jpg">
+					</div>
+				</div>
+				<br><p class="miTestimonioParrafo">Testimonio 3, Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum Isaac.
+				Testimonio 1, Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum ICM.</p>
+			</div>
+
+		</center>
+		<!-- P R E D I C A S   -   F I N A L -->
+
+
+			<!-- B O N U S  E X T R A   A L B U M   I . E . P .   P R E D I C A S   A U D I O   -   I N I C I O -->
+			<center>
+					<div class="acordeonCLS" id="acordeonID" tabindex="0">
+						<!-- P O R T A D A   D E L   A L B U M -->
+						<div class="primeraDivision">
+							<div class="barra555Principal">PRÉDICAS Y TESTIMONIOS</div>
+							<div class="portadaAlbum">
+								<picture>
+									<source media="(max-width: 991px)" srcset="../imagenes/TestimoniosPredicasAudio/portada2Celular.jpg"/>
+									<img src="../imagenes/TestimoniosPredicasAudio/portada1Laptop.jpg">
+								</picture>
+							</div>
+						</div>
+						<!-- 1 °   P R E D I C A -->
+						<div class="primeraDivision">
+							<div class="barra555Principal">TESTIMONIO DE SANIDAD</div>
+							<div class="contenidoPrimeraDivision">
+								<div class="panel">
+									<div class="campoAudioMP3">
+										<img src="../imagenes/TestimoniosPredicasAudio/IMGfondoTestimonio1.jpg">
+										<audio id="audio001" style="width: 100%;"><source src="../predicas/Testimonios/1-TestimonioSanidadHnoVíctorCarrasco.mp3" type="audio/mpeg"></audio>
+									</div>
+									<div class="pasajeBiblico">
+										<img src="../imagenes/TestimoniosPredicasAudio/IMGfondoPasajeBiblico1.jpg">
+										<small>Deuteronomio Cap.23 Ver.8</small>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 2 °   P R E D I C A -->
+						<div class="primeraDivision">
+							<div class="barra555Principal">TESTIMONIO DE SALVACIÓN</div>
+							<div class="contenidoPrimeraDivision">
+								<div class="panel">
+									<div class="campoAudioMP3">
+										<img src="../imagenes/TestimoniosPredicasAudio/IMGfondoTestimonio2.jpg">
+										<audio id="audio002" style="width: 100%;"><source src="../predicas/Testimonios/2-TestimonioSalvaciónHnoJoseGodoy.mp3" type="audio/mpeg"></audio>
+									</div>
+									<div class="pasajeBiblico">
+										<img src="../imagenes/TestimoniosPredicasAudio/IMGfondoPasajeBiblico2.jpg">
+										<small>Apocalipsis Cap.28 Ver.12</small>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 3 °   P R E D I C A -->
+						<div class="primeraDivision">
+							<div class="barra555Principal">TESTIMONIO DE AMONESTACIÓN</div>
+							<div class="contenidoPrimeraDivision">
+								<div class="panel">
+									<div class="campoAudioMP3">
+										<img src="../imagenes/TestimoniosPredicasAudio/IMGfondoTestimonio3.jpg">
+										<audio id="audio003" style="width: 100%;"><source src="../predicas/Testimonios/3-TestimonioObraDeDios.mp3" type="audio/mpeg"></audio>
+									</div>
+									<div class="pasajeBiblico">
+										<img src="../imagenes/TestimoniosPredicasAudio/IMGfondoPasajeBiblico3.jpg">
+										<small>2 Tesalonicenses Cap.32 Ver.8</small>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</center>
+			<!-- B O N U S  E X T R A   A L B U M   I . E . P .   P R E D I C A S   A U D I O   -   F I N A L -->
+
+
+			<!-- D I O S   S E   P R E S E N T A   E N   L L A M A S   D E   F U E G O   -   I N I C I O -->
+			<center>
+				<div class="cajaPrincipal">
+					<div class="miVideo">
+						<video width='100%' height='100%' poster="../video/posters/poster.jpg">
+							<source src="../video/videoIEP.mp4" type="video/mp4">
+						</video><br>
+					</div>
+					<div class="pasajeBiblico1">
+						<h2>TESTIGOS DE CRISTO</h2>
+						<small>San Juan Cap.5 Ver.31---</small>
+						<p>Si yo doy testimonio acerca de mi mismo, mi testimonio no es
+							verdadero. Otro es el que da testimonio acerca de mi, y sé
+							que el testimonio que da de mi es verdadero. Vosotros enviastéis
+							mensajeros a Juan, y él dio testimonio de la verdad. Pero yo no
+							recibo testimonio de hombre alguno; mas digo esto, para que vosotros
+							seáis salvos. <b>DIOS LE BENDIGA QUERIDO AMIGO.</b></p>
+					</div>
+				</div>	
+			</center>
+			<!-- D I O S   S E   P R E S E N T A   E N   L L A M A S   D E   F U E G O   -   F I N A L -->
+
+
+		<!-- P I E  D E  P A G I N A - I N I C I O -->
+		<footer>
+			<div class="container_1">
+				<div class="informacion">
+					<h3>SOBRE NOSOTROS</h3><hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.Mi nombre  ICM.</p>
+				</div>
+				<div class="redesSociales">
+					<h3>REDES SOCIALES</h3><hr>
+					<!-- Pagina Facebook -->
+					<a href="https://www.facebook.com/groups/446586037748392">
+						<ion-icon class="fac" name="logo-facebook"></ion-icon>Facebook
+					</a>
+					<a href="https://x.com/IEP_1ro_de_Mayo?t=tYf5MN01XgdzLakfRv6J8g&s=08">
+						<ion-icon class="twi" name="logo-xing"></ion-icon>TwiX
+					</a>
+					<!-- Pagina Youtube -->
+					<a href="https://www.youtube.com/@IEP-1ro-De-Mayo">
+						<ion-icon class="you" name="logo-youtube"></ion-icon>Youtube
+					</a>
+				</div>
+				<div class="contactos">
+					<h3>CONTACTOS</h3><hr>
+					<!-- Pagina Whatsapp -->
+					<a href="https://wa.me/59177994047">
+						<ion-icon class="wha" name="logo-whatsapp"></ion-icon>Whatssap
+					</a>
+					<!-- Pagina Gmail -->
+					<a href="mailto:iep1rodemayo@gmail.com">
+						<ion-icon class="gma" name="mail-outline"></ion-icon>Gmail
+					</a>
+					<!-- Pagina Locacion -->
+					<a href="https://maps.app.goo.gl/bohw1DnCfFGShxuw8">
+						<ion-icon class="ubi" name="location-outline"></ion-icon>Ubicacion
+					</a>
+				</div>
+			</div>
+			<div class="container_2">
+				<div>
+					<small>&copy; 2024 <b>I.E.P.</b> - Todos los Derechos Reservados.</small>
+				</div>
+			</div>	
+		</footer>
+		<!-- P I E   D E   P A G I N A - F I N A L -->
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<!-- I M P O R T A M O S   L A   A P I   P A R A   R E P R O D U C I R   A U D I O   C O N   M E D I A - E L E M E N T -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
+		
+
+		<script src="../script/19_AcordeonTestimoniosEnAudio.js"></script>
+		<script src="../script/20_predicasTestimoniosEnAudio.js"></script>
+		<script src="../script/21_predicasDiosLlamasDeFuego.js"></script>
+		<script>new Spry.Widget.Accordion("acordeonID");</script>
+
+		<script src="../script/3_Amburguesa.js"></script>
+		<script src="../script/11_Predicas.js"></script>
+	</body>
+</html>

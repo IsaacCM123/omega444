@@ -1,0 +1,151 @@
+.acordeonCLS{
+	margin-left: 6%;
+	width: 60vw;
+	height: 93vh;
+}
+.acordeonCLS .primeraDivision{  }
+.acordeonCLS .primeraDivision .barra555Principal{
+	background-color: #555;
+	color: #e1e1e1;
+	letter-spacing: 0.1vw;
+	font-size: 2.3vh;
+	width: 100%;
+	height: 6.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1vh;
+	cursor: pointer;
+	transition: .7s;
+}
+.acordeonCLS .primeraDivision .barra555Principal:hover{
+	background-color: #3a3a3a;
+	color: #fff;
+}
+.acordeonCLS .primeraDivision .portadaAlbum{
+	width: 100%;
+	height: 70%;
+}
+.acordeonCLS .primeraDivision .portadaAlbum picture img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision{
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	overflow: auto;
+	width: 100%;
+	height: 70%;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .campoAudioMP3{
+	position: relative;
+	width: 45%;
+	height: 70%;
+	display: flex;
+	align-items: end;
+	border-radius: 1vw;
+	box-shadow: 0.5vh 0.5vh 1.5vh black;
+	overflow: hidden;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .campoAudioMP3 img{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico{
+	position: relative;
+	width: 40%;
+	height: 70%;
+	border-radius: 1vw;
+	box-shadow: 0.5vh 0.5vh 1.5vh black;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico img{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico small{
+	position: absolute;
+	font-size: 3.5vh;
+	color: black;
+	font-family: "Allura", cursiva;
+	font-weight: 900;
+	text-shadow: 0.5px 0.5px 2px #fff;
+	top: 10vh;
+}
+.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico p{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 3.5vh;
+	border-radius: 1vh;
+	font-size: 2.5vh;
+	color: #fff;
+	text-align: left;
+	margin: 0vh 2vw 0vh 2vw;
+	text-shadow: 0.5px 0.5px 3px #000;
+	bottom: 7vh;
+}
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	#CuerpoPrincipalBonus .botonAbajo{
+		display: none;
+	}
+	#CuerpoPrincipalBonus{
+		width: 90vw;
+		height: 138vh;
+		display: flex;
+		justify-content: center;
+		padding-top: 0;
+	}
+	.acordeonCLS{
+		margin-left: 0%;
+		width: 90vw;
+		height: 135vh;
+	}
+	.acordeonCLS .primeraDivision{  }
+	.acordeonCLS .primeraDivision .barra555Principal{
+		height: 7%;
+		font-size: 2.7em;
+	}
+	.acordeonCLS .primeraDivision .portadaAlbum{
+		height: 69.6%;
+	}
+	.acordeonCLS .primeraDivision .contenidoPrimeraDivision{
+		height: 69.6%;
+	}
+	.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel{
+		flex-direction: column;
+	}
+	.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .campoAudioMP3{
+		width: 90%;
+		height: 42%;
+		top: 1vh;
+	}
+	.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico{
+		width: 90%;
+		height: 42%;
+		bottom: 1vh;
+	}
+	.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico small{
+		font-size: 3.5em;
+		top: 7vh;
+	}
+	.acordeonCLS .primeraDivision .contenidoPrimeraDivision .panel .pasajeBiblico p{
+		font-size: 2.7em;
+		bottom: 5vh;
+	}
+}

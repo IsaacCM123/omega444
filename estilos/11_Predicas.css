@@ -1,0 +1,165 @@
+.barraHorizontalMENU{
+	/*border: 5px solid darkred;
+	background-color: red;*/
+	width: 90vw;
+	height: 22vh;
+	margin-top: 4vh;
+	animation: fadeEffect 3.5s;
+}
+.barraHorizontalMENU button{
+	/*border: 5px solid darkblue;
+	background-color: blue;*/
+	border: none;
+	float: left;
+	width: 11%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0.3;
+	transition: 0.7s;
+}
+.barraHorizontalMENU button img{
+/*	border: 10px solid green;*/
+	width: 100%;
+	height: 100%;
+}
+.barraHorizontalMENU #abrirContenido1-ID{
+	opacity: 3;
+	border-bottom: 0.5vh solid #0bb63b;
+}
+
+.contenido{
+	/*border: 5px solid darkblue;
+	background-color: blue;*/
+	background-color: #f1683a;
+	display: none;
+	width: 82vw;
+	padding: 3% 4% 3% 4%;
+	/* . . . . . . Refuerzo . . . . . . . */
+	animation: fadeEffect 3.5s;
+}
+/* . . . . . . Refuerzo . . . . . . . */
+@keyframes fadeEffect{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.contenido h3{
+	/*border: 5px solid black;
+	background-color: gray;*/
+	font-size: 3.8vh;
+}
+.contenido .detalles{
+	/*border: 5px solid darkgreen;
+	background-color: green;*/
+	margin-top: 6vh;
+	border: 1px solid #ccc;
+	padding: 2% 2% 2% 2%;
+	display:  flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+}
+.contenido .detalles .imagen{
+/*	border: 10px solid purple;*/
+	width: 24%;
+}
+.contenido .detalles .imagen img{
+	width: 100%;
+	height: 100%;
+}
+.contenido .detalles .expedientes{
+	/*border: 5px solid darkorange;
+	background-color: orange;*/
+	padding: 2% 2% 2% 2%;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+}
+.contenido .detalles .expedientes h5{
+	font-size: 3vh;
+	text-align: left;
+	color: #fff;
+}
+.contenido .detalles .expedientes p{
+	text-align: left;
+	font-size: 2.7vh;
+	margin-left: 0;
+}
+.contenido .miTestimonioParrafo{
+	/*border: 5px solid darkmagenta;
+	background-color: magenta;*/
+	text-align: justify;
+	padding: 2% 2% 2% 2%;
+	font-size: 2.7vh;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+}
+#Hno1{
+	display: block;
+}
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	.barraHorizontalMENU{
+		/*border: 5px solid darkred;*/
+		/*background-color: red;*/
+		width: 100vw;
+		height: 17vh;
+	}
+	.barraHorizontalMENU button{
+		/*border: 5px solid darkblue;*/
+		/*background-color: blue;*/
+		width: 32%;
+	}
+	.barraHorizontalMENU button img{
+		/*border: 10px solid green;*/
+		width: 100%;
+		height: 100%;
+	}
+	.contenido{
+		/*border: 5px solid darkblue;*/
+		/*background-color: blue;*/
+		width: 100vw;
+		padding: 5% 0% 5% 0%;
+	}
+	.contenido h3{
+		/*border: 5px solid black;*/
+		/*background-color: gray;*/
+		font-size: 4.7em;
+		display: flex;
+		justify-content: center;
+		width: 90%;
+		padding: 5%;
+	}
+	.contenido .detalles{
+		/*border: 5px solid darkgreen;*/
+		/*background-color: green;*/
+		margin: 5% 0% 0% 0%;
+		padding: 5% 0% 5% 0%;
+		flex-direction: column;
+		width: 95%;
+	}
+	.contenido .detalles .imagen{
+		/*border: 10px solid purple;*/
+		width: 90%;
+		height: 800px;
+	}
+	.contenido .detalles .expedientes{
+		/*border: 5px solid darkorange;*/
+		/*background-color: orange;*/
+		padding: 5% 5% 5% 5%;
+		width: 80%;
+		margin-bottom: 5%;
+	}
+	.contenido .detalles .expedientes h5{
+		font-size: 2.5em;
+	}
+	.contenido .detalles .expedientes p{
+		font-size: 1.3em;
+	}
+	.contenido .miTestimonioParrafo{
+		/*border: 5px solid darkmagenta;*/
+		/*background-color: magenta;*/
+		padding: 5% 5% 5% 5%;
+		font-size: 0.9em;
+		text-align: justify;
+		margin: 0 0 0 0;
+	}
+}

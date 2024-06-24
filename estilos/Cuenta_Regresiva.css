@@ -1,0 +1,146 @@
+/* Cuenta Regresiva E L I M I M A R   D E S P U E S */
+body{
+	display: flex;
+	justify-content: center;
+	background: #1683a0;
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	text-decoration: none;
+	align-items: center;
+}
+.container{
+	width: 90vw;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1{
+	font-size: 11vh;
+	text-shadow: 1px 1px 1px black;
+	color: #f1683a;
+}
+small{
+	font-family: "Allura", cursiva;
+	font-size: 3.9vh;
+	color: #fff;
+	text-shadow: 2px 2px 2px black;
+	margin-top: 3vh;
+}
+h3{
+	font-size: 2.7vh;
+	color: #fff;
+	text-shadow: 1px 1px 1px black;
+	margin-top: 1vh;
+}
+h4{
+	font-size: 9vh;
+	text-shadow: 1px 1px 1px black;
+	color: #fff;
+	letter-spacing: 0.1vw;
+	margin-top: 3vh;
+}
+.cuentaRegresiva{
+	width: 80%;
+	height: 25vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+div{
+	width: 21%;
+	height: 20vh;
+	padding: 2vh;
+}
+p{
+	background: #f1683a;
+	border-radius: 2rem;
+	color: white;
+	font-size: 9vh;
+	font-weight: bold;
+}
+span{
+	font-size: 4vh;
+	font-weight: bold;
+	display: block;
+	color: #fff;
+	margin-top: 2vh;
+}
+#bienvenidos{
+	width: 20%;
+	height: 9vh;
+	font-size: 2.5vh;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 5;
+	border: none;
+	background: #555;
+	color: #eee;
+	margin-top: 3vh;
+	transition: .7s;
+}
+#bienvenidos:hover{
+	background: #eee;
+	color: #555;
+}
+/* :::::::::::::::::::::::::::: R E S P O N S I V E  C E L U L A R :::::::::::::::::::::::::::: */
+@media(max-width: 991px){
+	.container{
+		display: block;
+		width: 90vw;
+		height: 99vh;
+	}
+	h1{
+		text-shadow: 1px 1px 1px black;
+		font-size: 8em;
+		padding-top: 0.3em;
+	}
+	small{
+		font-family: "Allura", cursiva;
+		font-size: 3.3vh;
+		color: white;
+		text-shadow: 2px 2px 2px black;
+		font-size: 3.3em;
+		display: block;
+		margin-top: 1.5vh;
+	}
+	h3{
+		font-size: 2.5em;
+		margin-top: 0.7vh;
+		text-align: justify;
+	}
+	h4{
+		font-size: 5.5em;
+		text-shadow: 5px 5px 3px black;
+		color: #fff;
+		letter-spacing: 0.1vw;
+		margin-top: 2vh;
+	}
+	.cuentaRegresiva{
+		margin-top: 1em;
+		width: 75%;
+		height: 53.4%;
+		display: block;
+		padding: 0;
+	}
+	.cuentaRegresiva div{
+		width: 85%;
+		height: 17%;
+	}
+	p{
+		font-size: 7em;
+	}
+	span{
+		font-size: 2.5em;
+		margin-top: 0.5vh;
+	}
+	#bienvenidos{
+		width: 65%;
+		height: 7vh;
+		font-size: 2.5em;
+		margin-top: 0.8em;
+	}
+}
